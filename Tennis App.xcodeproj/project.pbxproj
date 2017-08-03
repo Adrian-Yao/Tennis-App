@@ -7,24 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E84C3A31F324631005E973D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E84C3A21F324631005E973D /* GoogleService-Info.plist */; };
+		5E84C3A51F324A1D005E973D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84C3A41F324A1D005E973D /* ViewController.swift */; };
+		5E84C3A71F324A32005E973D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E84C3A61F324A32005E973D /* LaunchScreen.storyboard */; };
+		5E84C3A91F324A3B005E973D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E84C3A81F324A3B005E973D /* Main.storyboard */; };
+		5E84C3AB1F324A47005E973D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E84C3AA1F324A47005E973D /* GoogleService-Info.plist */; };
+		5E84C3B21F3251A4005E973D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E84C3B11F3251A4005E973D /* Login.storyboard */; };
+		5E84C3B41F32529E005E973D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84C3B31F32529E005E973D /* LoginViewController.swift */; };
+		5E84C3B71F3258A0005E973D /* Racquet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E84C3B61F3258A0005E973D /* Racquet.jpg */; };
+		5E84C3BA1F336CBA005E973D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84C3B91F336CBA005E973D /* User.swift */; };
 		5E97D6551F322BB5004018F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97D6541F322BB5004018F3 /* AppDelegate.swift */; };
-		5E97D6571F322BB5004018F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97D6561F322BB5004018F3 /* ViewController.swift */; };
-		5E97D65A1F322BB5004018F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E97D6581F322BB5004018F3 /* Main.storyboard */; };
 		5E97D65C1F322BB5004018F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E97D65B1F322BB5004018F3 /* Assets.xcassets */; };
-		5E97D65F1F322BB5004018F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E97D65D1F322BB5004018F3 /* LaunchScreen.storyboard */; };
 		F36082AECCD246F53A9BD3C7 /* Pods_Tennis_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778135CB10B109E6FC1D04DA /* Pods_Tennis_App.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5E84C3A21F324631005E973D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5E84C3A41F324A1D005E973D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
+		5E84C3A61F324A32005E973D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E84C3A81F324A3B005E973D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
+		5E84C3AA1F324A47005E973D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Supporting/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5E84C3AC1F324A53005E973D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Supporting/Info.plist; sourceTree = "<group>"; };
+		5E84C3B11F3251A4005E973D /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
+		5E84C3B31F32529E005E973D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
+		5E84C3B61F3258A0005E973D /* Racquet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Racquet.jpg; path = ../../../../../Racquet.jpg; sourceTree = "<group>"; };
+		5E84C3B91F336CBA005E973D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
 		5E97D6511F322BB5004018F3 /* Tennis App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tennis App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E97D6541F322BB5004018F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5E97D6561F322BB5004018F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5E97D6591F322BB5004018F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E97D65B1F322BB5004018F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5E97D65E1F322BB5004018F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5E97D6601F322BB5004018F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		778135CB10B109E6FC1D04DA /* Pods_Tennis_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tennis_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A85F66FE8F31A7ABD63F8012 /* Pods-Tennis App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tennis App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tennis App/Pods-Tennis App.debug.xcconfig"; sourceTree = "<group>"; };
 		D5443F26071888EA5A790B55 /* Pods-Tennis App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tennis App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tennis App/Pods-Tennis App.release.xcconfig"; sourceTree = "<group>"; };
@@ -42,6 +50,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E84C3AE1F324B34005E973D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5E84C3A41F324A1D005E973D /* ViewController.swift */,
+				5E84C3B31F32529E005E973D /* LoginViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5E84C3AF1F324B47005E973D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5E84C3A81F324A3B005E973D /* Main.storyboard */,
+				5E84C3B11F3251A4005E973D /* Login.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		5E84C3B01F324B80005E973D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E84C3AC1F324A53005E973D /* Info.plist */,
+				5E84C3AA1F324A47005E973D /* GoogleService-Info.plist */,
+				5E84C3A61F324A32005E973D /* LaunchScreen.storyboard */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E84C3B51F325895005E973D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5E84C3B61F3258A0005E973D /* Racquet.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		5E84C3B81F336C9F005E973D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5E84C3B91F336CBA005E973D /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		5E97D6481F322BB5004018F3 = {
 			isa = PBXGroup;
 			children = (
@@ -63,13 +115,13 @@
 		5E97D6531F322BB5004018F3 /* Tennis App */ = {
 			isa = PBXGroup;
 			children = (
-				5E84C3A21F324631005E973D /* GoogleService-Info.plist */,
+				5E84C3B81F336C9F005E973D /* Models */,
+				5E84C3B51F325895005E973D /* Images */,
 				5E97D6541F322BB5004018F3 /* AppDelegate.swift */,
-				5E97D6561F322BB5004018F3 /* ViewController.swift */,
-				5E97D6581F322BB5004018F3 /* Main.storyboard */,
+				5E84C3AE1F324B34005E973D /* View Controllers */,
+				5E84C3AF1F324B47005E973D /* Storyboards */,
+				5E84C3B01F324B80005E973D /* Supporting Files */,
 				5E97D65B1F322BB5004018F3 /* Assets.xcassets */,
-				5E97D65D1F322BB5004018F3 /* LaunchScreen.storyboard */,
-				5E97D6601F322BB5004018F3 /* Info.plist */,
 			);
 			path = "Tennis App";
 			sourceTree = "<group>";
@@ -154,10 +206,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E97D65F1F322BB5004018F3 /* LaunchScreen.storyboard in Resources */,
-				5E84C3A31F324631005E973D /* GoogleService-Info.plist in Resources */,
+				5E84C3A91F324A3B005E973D /* Main.storyboard in Resources */,
+				5E84C3B71F3258A0005E973D /* Racquet.jpg in Resources */,
+				5E84C3AB1F324A47005E973D /* GoogleService-Info.plist in Resources */,
 				5E97D65C1F322BB5004018F3 /* Assets.xcassets in Resources */,
-				5E97D65A1F322BB5004018F3 /* Main.storyboard in Resources */,
+				5E84C3B21F3251A4005E973D /* Login.storyboard in Resources */,
+				5E84C3A71F324A32005E973D /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,31 +270,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E97D6571F322BB5004018F3 /* ViewController.swift in Sources */,
+				5E84C3BA1F336CBA005E973D /* User.swift in Sources */,
+				5E84C3B41F32529E005E973D /* LoginViewController.swift in Sources */,
+				5E84C3A51F324A1D005E973D /* ViewController.swift in Sources */,
 				5E97D6551F322BB5004018F3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		5E97D6581F322BB5004018F3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5E97D6591F322BB5004018F3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5E97D65D1F322BB5004018F3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5E97D65E1F322BB5004018F3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5E97D6611F322BB5004018F3 /* Debug */ = {
@@ -342,7 +379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M5747P99YK;
-				INFOPLIST_FILE = "Tennis App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Tennis App/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Adrian-Yao.Tennis-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -356,7 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = M5747P99YK;
-				INFOPLIST_FILE = "Tennis App/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Tennis App/Supporting/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Adrian-Yao.Tennis-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
