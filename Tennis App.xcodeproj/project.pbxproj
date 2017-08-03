@@ -15,6 +15,10 @@
 		5E84C3B41F32529E005E973D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84C3B31F32529E005E973D /* LoginViewController.swift */; };
 		5E84C3B71F3258A0005E973D /* Racquet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E84C3B61F3258A0005E973D /* Racquet.jpg */; };
 		5E84C3BA1F336CBA005E973D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84C3B91F336CBA005E973D /* User.swift */; };
+		5E84C3BC1F3376E3005E973D /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84C3BB1F3376E3005E973D /* CreateUsernameViewController.swift */; };
+		5E84C3BF1F337F05005E973D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84C3BE1F337F05005E973D /* UserService.swift */; };
+		5E84C3C11F339B89005E973D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84C3C01F339B89005E973D /* Constants.swift */; };
+		5E84C3C41F339C60005E973D /* Storyboard + Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84C3C31F339C60005E973D /* Storyboard + Utility.swift */; };
 		5E97D6551F322BB5004018F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E97D6541F322BB5004018F3 /* AppDelegate.swift */; };
 		5E97D65C1F322BB5004018F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E97D65B1F322BB5004018F3 /* Assets.xcassets */; };
 		F36082AECCD246F53A9BD3C7 /* Pods_Tennis_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 778135CB10B109E6FC1D04DA /* Pods_Tennis_App.framework */; };
@@ -30,6 +34,10 @@
 		5E84C3B31F32529E005E973D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
 		5E84C3B61F3258A0005E973D /* Racquet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Racquet.jpg; path = ../../../../../Racquet.jpg; sourceTree = "<group>"; };
 		5E84C3B91F336CBA005E973D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		5E84C3BB1F3376E3005E973D /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateUsernameViewController.swift; path = Controllers/CreateUsernameViewController.swift; sourceTree = "<group>"; };
+		5E84C3BE1F337F05005E973D /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = Services/UserService.swift; sourceTree = "<group>"; };
+		5E84C3C01F339B89005E973D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = Supporting/Constants.swift; sourceTree = "<group>"; };
+		5E84C3C31F339C60005E973D /* Storyboard + Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Storyboard + Utility.swift"; path = "Extensions/Storyboard + Utility.swift"; sourceTree = "<group>"; };
 		5E97D6511F322BB5004018F3 /* Tennis App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tennis App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E97D6541F322BB5004018F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E97D65B1F322BB5004018F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +63,7 @@
 			children = (
 				5E84C3A41F324A1D005E973D /* ViewController.swift */,
 				5E84C3B31F32529E005E973D /* LoginViewController.swift */,
+				5E84C3BB1F3376E3005E973D /* CreateUsernameViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -74,6 +83,7 @@
 				5E84C3AC1F324A53005E973D /* Info.plist */,
 				5E84C3AA1F324A47005E973D /* GoogleService-Info.plist */,
 				5E84C3A61F324A32005E973D /* LaunchScreen.storyboard */,
+				5E84C3C01F339B89005E973D /* Constants.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -92,6 +102,22 @@
 				5E84C3B91F336CBA005E973D /* User.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		5E84C3BD1F337EE8005E973D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5E84C3BE1F337F05005E973D /* UserService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		5E84C3C21F339C33005E973D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5E84C3C31F339C60005E973D /* Storyboard + Utility.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		5E97D6481F322BB5004018F3 = {
@@ -115,6 +141,8 @@
 		5E97D6531F322BB5004018F3 /* Tennis App */ = {
 			isa = PBXGroup;
 			children = (
+				5E84C3C21F339C33005E973D /* Extensions */,
+				5E84C3BD1F337EE8005E973D /* Services */,
 				5E84C3B81F336C9F005E973D /* Models */,
 				5E84C3B51F325895005E973D /* Images */,
 				5E97D6541F322BB5004018F3 /* AppDelegate.swift */,
@@ -272,7 +300,11 @@
 			files = (
 				5E84C3BA1F336CBA005E973D /* User.swift in Sources */,
 				5E84C3B41F32529E005E973D /* LoginViewController.swift in Sources */,
+				5E84C3BF1F337F05005E973D /* UserService.swift in Sources */,
 				5E84C3A51F324A1D005E973D /* ViewController.swift in Sources */,
+				5E84C3C11F339B89005E973D /* Constants.swift in Sources */,
+				5E84C3C41F339C60005E973D /* Storyboard + Utility.swift in Sources */,
+				5E84C3BC1F3376E3005E973D /* CreateUsernameViewController.swift in Sources */,
 				5E97D6551F322BB5004018F3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
