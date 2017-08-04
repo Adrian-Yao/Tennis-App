@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E84C3A51F324A1D005E973D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84C3A41F324A1D005E973D /* ViewController.swift */; };
+		5E84C3A51F324A1D005E973D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84C3A41F324A1D005E973D /* ProfileViewController.swift */; };
 		5E84C3A71F324A32005E973D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E84C3A61F324A32005E973D /* LaunchScreen.storyboard */; };
 		5E84C3A91F324A3B005E973D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E84C3A81F324A3B005E973D /* Main.storyboard */; };
 		5E84C3AB1F324A47005E973D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E84C3AA1F324A47005E973D /* GoogleService-Info.plist */; };
@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5E84C3A41F324A1D005E973D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
+		5E84C3A41F324A1D005E973D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Controllers/ProfileViewController.swift; sourceTree = "<group>"; };
 		5E84C3A61F324A32005E973D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E84C3A81F324A3B005E973D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		5E84C3AA1F324A47005E973D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Supporting/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		5E84C3AE1F324B34005E973D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5E84C3A41F324A1D005E973D /* ViewController.swift */,
+				5E84C3A41F324A1D005E973D /* ProfileViewController.swift */,
 				5E84C3B31F32529E005E973D /* LoginViewController.swift */,
 				5E84C3BB1F3376E3005E973D /* CreateUsernameViewController.swift */,
 			);
@@ -301,7 +301,7 @@
 				5E84C3BA1F336CBA005E973D /* User.swift in Sources */,
 				5E84C3B41F32529E005E973D /* LoginViewController.swift in Sources */,
 				5E84C3BF1F337F05005E973D /* UserService.swift in Sources */,
-				5E84C3A51F324A1D005E973D /* ViewController.swift in Sources */,
+				5E84C3A51F324A1D005E973D /* ProfileViewController.swift in Sources */,
 				5E84C3C11F339B89005E973D /* Constants.swift in Sources */,
 				5E84C3C41F339C60005E973D /* Storyboard + Utility.swift in Sources */,
 				5E84C3BC1F3376E3005E973D /* CreateUsernameViewController.swift in Sources */,
