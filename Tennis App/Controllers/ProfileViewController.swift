@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ViewController: UIViewController {
+class ProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,5 +22,11 @@ class ViewController: UIViewController {
     }
 
 
+    @IBOutlet weak var profilePicButton: UIButton!
+    @IBOutlet weak var nameButton: UITextField!
+    @IBOutlet weak var agePicker: UIPickerView!
+   
+    
+    
 }
 
