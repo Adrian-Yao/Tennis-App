@@ -21,11 +21,35 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+//OUTLET
     @IBOutlet weak var profilePicButton: UIButton!
-    @IBOutlet weak var nameButton: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var agePicker: UIPickerView!
-   
+    @IBOutlet weak var genderSegmentControl: UISegmentedControl!
+    @IBOutlet weak var levelPicker: UIPickerView!
+    @IBOutlet weak var contryTextField: UITextField!
+    @IBOutlet weak var cityTextField: UITextField!
+    @IBOutlet weak var phoneNumberTextField: UITextField!
+    @IBOutlet weak var infoTextView: UITextView!
+    @IBOutlet weak var matchButton: UIButton!
+    
+    //ACTION
+    
+    @IBAction func profileButtonTapped(_ sender: Any) {
+        print("Profile ICE CREAM")
+    }
+    
+    @IBAction func genderSegmentControlTapped(_ sender: Any) {
+        
+        print("SEGMENT CONTROL ICE CREAM")
+    }
+    
+    
+    @IBAction func matchButtonTapped(_ sender: Any) {
+     
+        print("MATCH BUTTON ICE CREAM")
+    }
+    
     
     
 }

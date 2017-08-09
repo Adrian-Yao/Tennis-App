@@ -16,77 +16,85 @@ class User: NSObject {
     
     let uid: String
     let username: String
-    let age: Int?
-    let gender: Bool?
-    let level: Float?
-    let country: String?
-    let city: String?
-    let phoneNumber: String?
-    let info: String?
+//    let age: Int?
+//    let gender: Bool?
+//    let level: Float?
+//    let country: String?
+//    let city: String?
+//    let phoneNumber: String?
+//    let info: String?
     
     // MARK: - Init
     
-    init(uid: String, username: String, age: Int?, gender: Bool?, level: Float?, country: String?, city: String?, phoneNumber: Int?, info:String?) {
+    init(uid: String, username: String) {
         self.uid = uid
         self.username = username
-        self.age = age
-        self.gender = gender
-        self.level = level
-        self.country = country
-        self.city = city
-        self.phoneNumber = "phoneNumber"
-        self.info = info
+//        self.age = age
+//        self.gender = gender
+//        self.level = level
+//        self.country = country
+//        self.city = city
+//        self.phoneNumber = phoneNumber
+//        self.info = info
         
         super.init()
     }
     
     init?(snapshot: DataSnapshot) {
         guard let dict = snapshot.value as? [String : Any],
-            let username = dict["username"] as? String,
-            let age = dict["age"] as? Int,
-            let gender = dict["gender"] as? Bool,
-            let level = dict["level"] as? Float,
-            let country = dict["country"] as? String,
-            let city = dict["city"] as? String,
-            let phoneNumber = dict["phonenumber"] as? String,
-            let info = dict["info?"] as? String
+            let username = dict["username"] as? String
+//            let age = dict["age"] as? Int,
+//            let gender = dict["gender"] as? Bool,
+//            let level = dict["level"] as? Float,
+//            let country = dict["country"] as? String,
+//            let city = dict["city"] as? String,
+//            let phoneNumber = dict["phonenumber"] as? String,
+//            let info = dict["info?"] as? String
+//                    let age = 0 as? Int,
+//                    let gender = true as? Bool,
+//                    let level = 1.5 as? Float,
+//                    let country = "USA" as? String,
+//                    let city = "New York" as? String,
+//                    let phoneNumber = "0000" as? String,
+//                    let info = "no" as? String
+
         
             else { return nil }
         
         self.uid = snapshot.key
         self.username = username
-        self.age = age
-        self.gender = gender
-        self.level = level
-        self.country = country
-        self.city = city
-        self.phoneNumber = "phoneNumber"
-        self.info = info
+//        self.age = age
+//        self.gender = gender
+//        self.level = level
+//        self.country = country
+//        self.city = city
+//        self.phoneNumber = phoneNumber
+//        self.info = info
         
         super.init()
     }
     
     required init?(coder aDecoder: NSCoder) {
         guard let uid = aDecoder.decodeObject(forKey: Constants.UserDefaults.uid) as? String,
-            let username = aDecoder.decodeObject(forKey: Constants.UserDefaults.username) as? String,
-            let age: Int? = 0,
-            let gender: Bool? = true,
-            let level: Float? = 0.0,
-            let country: String? = "",
-            let city:String? = "",
-            let phoneNumber:String? = "",
-            let info:String? = ""
+            let username = aDecoder.decodeObject(forKey: Constants.UserDefaults.username) as? String
+//            let age: Int = 0,
+//            let gender: Bool = true,
+//            let level: Float = 0.0,
+//            let country: String = "",
+//            let city:String = "",
+//            let phoneNumber:String = "",
+//            let info:String = ""
             else { return nil }
         
         self.uid = uid
         self.username = username
-        self.age = age
-        self.gender = gender
-        self.level = Float(level!)
-        self.country = country
-        self.city = city
-        self.phoneNumber = phoneNumber
-        self.info = info
+//        self.age = age
+//        self.gender = gender
+//        self.level = Float(level)
+//        self.country = country
+//        self.city = city
+//        self.phoneNumber = phoneNumber
+//        self.info = info
         
         super.init()
     }
