@@ -28,7 +28,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         if pickerView.tag == 0 {
             return 83
         } else if pickerView.tag == 1 {
-            return 14
+            return 15
         } else {
             return 0
         }
@@ -63,7 +63,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         // Dispose of any resources that can be recreated.
     }
 
-   
+ 
 //OUTLET
     @IBOutlet weak var profilePicButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
@@ -96,7 +96,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     
     @IBAction func matchButtonTapped(_ sender: Any) {
-        func create(_firUser:FIRUser, age: Int?, gender: Bool?, level: Float, country: String?, city: String?, phoneNumber: String?, info:String?) {
+        func create(_firUser:FIRUser, age: Int?, gender: Bool?, level: Float, country: String?, city: String?, phoneNumber: String?, info: String?) {
             
             
             
