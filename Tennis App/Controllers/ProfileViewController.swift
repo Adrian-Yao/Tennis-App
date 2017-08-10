@@ -97,11 +97,11 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     
     @IBAction func matchButtonTapped(_ sender: Any) {
-        func create(_firUser:FIRUser, age: Int?, gender: Bool?, level: Float, country: String?, city: String?, phoneNumber: String?, info: String?) {
-            
-            
-            
-        }
+        
+        Profile(age: agePicker.numberOfComponents, gender: genderSegmentControl.apportionsSegmentWidthsByContent, level: Float(levelPicker.numberOfComponents), country: contryTextField.text, city: cityTextField.text, phoneNumber: phoneNumberTextField.text, info: infoTextView.text)
+        
+        
+        
         print("MATCH BUTTON ICE CREAM")
 
     }

@@ -10,16 +10,17 @@
 import UIKit
 import FirebaseDatabase.FIRDataSnapshot
 
-class Post {
-    var age: Int?
-    var gender: Bool?
-    var level: Float?
-    var country: String?
-    var city: String?
-    var phoneNumber: String?
-    var info: String?
-
+class Profile {
+ 
+    var age: Int
+    var gender: Bool
+    var level: Float
+    var country: String
+    var city: String
+    var phoneNumber: String
+    var info: String
     var key: String?
+    
     let poster:User
     var dictValue: [String : Any] {
         let userDict = ["uid" : poster.uid,
@@ -34,17 +35,17 @@ class Post {
                 "info" : info,
                 "poster":userDict]
     }
-
+   
     
     
     init(age: Int?, gender: Bool?, level: Float, country: String?, city: String?, phoneNumber: String?, info: String?) {
-        self.age = age
-        self.gender = gender
+        self.age = age!
+        self.gender = gender!
         self.level = level
-        self.country = country
-        self.city = city
-        self.phoneNumber = phoneNumber
-        self.info = info
+        self.country = country!
+        self.city = city!
+        self.phoneNumber = phoneNumber!
+        self.info = info!
         
         self.poster = User.current
     }
