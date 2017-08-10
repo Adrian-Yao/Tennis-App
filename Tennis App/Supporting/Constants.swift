@@ -16,6 +16,14 @@ struct Constants {
         static let currentUser = "currentUser"
         static let uid = "uid"
         static let username = "username"
+        static let age = "age"
+        static let displayName = "displayName"
+        static let gender = "gender"
+        static let level = "level"
+        static let country = "country"
+        static let city = "city"
+        static let phoneNumber = "phoneNumber"
+        static let info = "info"
     }
 }
 

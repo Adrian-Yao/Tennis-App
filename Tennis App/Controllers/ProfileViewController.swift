@@ -98,7 +98,9 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     @IBAction func matchButtonTapped(_ sender: Any) {
         
-        Profile(age: agePicker.numberOfComponents, gender: genderSegmentControl.apportionsSegmentWidthsByContent, level: Float(levelPicker.numberOfComponents), country: contryTextField.text, city: cityTextField.text, phoneNumber: phoneNumberTextField.text, info: infoTextView.text)
+//        Profile(age: agePicker.numberOfComponents, gender: genderSegmentControl.apportionsSegmentWidthsByContent, level: Float(levelPicker.numberOfComponents), country: contryTextField.text, city: cityTextField.text, phoneNumber: phoneNumberTextField.text, info: infoTextView.text)
+        
+        
         
         
         

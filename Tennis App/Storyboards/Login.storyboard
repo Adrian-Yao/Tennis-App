@@ -27,20 +27,20 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKK-jA-tfW">
                                         <rect key="frame" x="126" y="219" width="123" height="132"/>
-                                        <color key="backgroundColor" red="0.94509803921568625" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.36470588235294116" green="0.3411764705882353" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="123" id="6Ac-5h-6ET"/>
-                                            <constraint firstAttribute="height" constant="132" id="qxK-pG-baV"/>
+                                            <constraint firstAttribute="width" constant="123" id="5on-3X-0PT"/>
+                                            <constraint firstAttribute="height" constant="132" id="dNC-eA-fmc"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
-                                        <color key="textColor" red="0.42352941176470588" green="0.83137254901960778" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.94509803921568625" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jw-Xe-DSV">
                                         <rect key="frame" x="0.0" y="574" width="375" height="93"/>
                                         <color key="backgroundColor" red="0.99607843137254903" green="0.57647058823529407" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="93" id="jUD-El-rIm"/>
+                                            <constraint firstAttribute="height" constant="93" id="UWt-Ag-EUK"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="29"/>
                                         <state key="normal" title="Register or Log In">
@@ -54,20 +54,20 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.89803921568627454" green="0.77647058823529413" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="aKK-jA-tfW" firstAttribute="top" secondItem="M1c-MT-EQT" secondAttribute="top" constant="219" id="Cnu-7j-MLz"/>
-                                    <constraint firstAttribute="bottom" secondItem="5jw-Xe-DSV" secondAttribute="bottom" id="JmP-I0-MXX"/>
-                                    <constraint firstItem="aKK-jA-tfW" firstAttribute="centerX" secondItem="5jw-Xe-DSV" secondAttribute="centerX" id="Kzw-OF-7H4"/>
-                                    <constraint firstItem="5jw-Xe-DSV" firstAttribute="leading" secondItem="M1c-MT-EQT" secondAttribute="leading" id="L7i-sj-GOy"/>
-                                    <constraint firstAttribute="trailing" secondItem="5jw-Xe-DSV" secondAttribute="trailing" id="abS-aB-XON"/>
+                                    <constraint firstAttribute="trailing" secondItem="5jw-Xe-DSV" secondAttribute="trailing" id="89i-CQ-xMq"/>
+                                    <constraint firstItem="5jw-Xe-DSV" firstAttribute="leading" secondItem="M1c-MT-EQT" secondAttribute="leading" id="AG3-8c-KG4"/>
+                                    <constraint firstAttribute="bottom" secondItem="5jw-Xe-DSV" secondAttribute="bottom" id="Q45-ko-zTP"/>
+                                    <constraint firstItem="aKK-jA-tfW" firstAttribute="top" secondItem="M1c-MT-EQT" secondAttribute="top" constant="219" id="hmK-ig-6NL"/>
+                                    <constraint firstItem="aKK-jA-tfW" firstAttribute="centerX" secondItem="5jw-Xe-DSV" secondAttribute="centerX" id="zKC-L6-fxu"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="M1c-MT-EQT" firstAttribute="leading" secondItem="QsM-zV-rtr" secondAttribute="leading" id="Cam-h3-WRL"/>
-                            <constraint firstItem="M1c-MT-EQT" firstAttribute="bottom" secondItem="AKW-Zr-y3h" secondAttribute="top" id="IfH-nU-nUZ"/>
-                            <constraint firstItem="M1c-MT-EQT" firstAttribute="top" secondItem="QsM-zV-rtr" secondAttribute="top" id="Yb0-09-IpH"/>
-                            <constraint firstAttribute="trailing" secondItem="M1c-MT-EQT" secondAttribute="trailing" id="lEO-td-tim"/>
+                            <constraint firstItem="M1c-MT-EQT" firstAttribute="leading" secondItem="QsM-zV-rtr" secondAttribute="leading" id="Eob-rl-nmM"/>
+                            <constraint firstItem="M1c-MT-EQT" firstAttribute="bottom" secondItem="AKW-Zr-y3h" secondAttribute="top" id="aOJ-Ha-tl6"/>
+                            <constraint firstAttribute="trailing" secondItem="M1c-MT-EQT" secondAttribute="trailing" id="bxt-Xz-th4"/>
+                            <constraint firstItem="M1c-MT-EQT" firstAttribute="top" secondItem="QsM-zV-rtr" secondAttribute="top" id="hnW-18-gaR"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0Hm-CD-Ydz"/>

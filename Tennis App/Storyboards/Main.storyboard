@@ -23,19 +23,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSB-9j-U59">
-                                <rect key="frame" x="86" y="568" width="203" height="41"/>
-                                <color key="backgroundColor" red="0.99607843137254903" green="0.57647058823529407" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
-                                <state key="normal" title="Find Your Match!"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="matchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D1c-oW-oSG"/>
-                                    <segue destination="bmy-2V-fLN" kind="show" identifier="displayList" id="zoV-xm-b20"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ebw-yh-yyd">
                                 <rect key="frame" x="55" y="65" width="283" height="47"/>
                                 <subviews>
@@ -265,16 +252,30 @@
                                     <constraint firstItem="NH5-CL-gGM" firstAttribute="top" secondItem="cUY-Pj-EzL" secondAttribute="bottom" constant="10" id="yr7-9U-O6D"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSB-9j-U59">
+                                <rect key="frame" x="75" y="575" width="225" height="47"/>
+                                <color key="backgroundColor" red="0.99607843137254903" green="0.57647058823529407" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                                <state key="normal" title="Find Your Match!">
+                                    <color key="titleColor" red="0.36470588235294116" green="0.3411764705882353" blue="0.41960784313725491" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="20"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="matchButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D1c-oW-oSG"/>
+                                    <segue destination="bmy-2V-fLN" kind="show" identifier="displayList" id="zoV-xm-b20"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.77647058823529413" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ebw-yh-yyd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="39" id="218-dY-H8f"/>
+                            <constraint firstItem="VSB-9j-U59" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="59" id="43Y-mo-S5K"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lVJ-mh-p4Z" secondAttribute="trailing" constant="23" id="7h0-gM-61F"/>
-                            <constraint firstItem="VSB-9j-U59" firstAttribute="top" secondItem="lVJ-mh-p4Z" secondAttribute="bottom" constant="33" id="8m8-i5-dE9"/>
-                            <constraint firstItem="VSB-9j-U59" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="8sv-hh-iyC"/>
-                            <constraint firstItem="VSB-9j-U59" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CXj-a2-NsZ"/>
                             <constraint firstItem="lVJ-mh-p4Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="38" id="GmZ-c8-N8e"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VSB-9j-U59" secondAttribute="bottom" constant="58" id="OQZ-hW-rzs"/>
+                            <constraint firstItem="VSB-9j-U59" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Mxh-gv-h16"/>
+                            <constraint firstItem="VSB-9j-U59" firstAttribute="top" secondItem="lVJ-mh-p4Z" secondAttribute="bottom" constant="40" id="OXd-D6-Ci7"/>
                             <constraint firstItem="ebw-yh-yyd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="65" id="lI0-Bf-1ju"/>
                             <constraint firstItem="lVJ-mh-p4Z" firstAttribute="top" secondItem="ebw-yh-yyd" secondAttribute="bottom" constant="25" id="niM-BK-Q2G"/>
                             <constraint firstItem="lVJ-mh-p4Z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ogX-UQ-iEs"/>
