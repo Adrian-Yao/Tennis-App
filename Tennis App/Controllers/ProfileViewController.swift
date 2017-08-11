@@ -12,9 +12,9 @@ import FirebaseDatabase
 
 class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
-    var age: Int?
-    var gender: Bool?
-    var level: Float?
+    var age: String?
+    var gender: String?
+    var level: String?
     var country: String?
     var city: String?
     var phoneNumber: String?
@@ -137,7 +137,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
             
             else { return }
         
-                UserService.create(firUser, displayName: displayName, age: age, gender:gender!, level:level!, country:country!, city:city!, phoneNumber:phoneNumber!,info:info!) { (user) in
+                UserService.create(firUser, displayName: displayName, age: age, gender:gender, level:level!, country:country!, city:city!, phoneNumber:phoneNumber!,info:info!) { (user) in
             guard let user = user
                 else {
                     // handle error

@@ -24,7 +24,7 @@ struct UserService {
         })
     }
     
-    static func create(_ firUser: FIRUser, displayName: String, age: Int, gender: Bool, level: Float, country: String, city: String, phoneNumber: String, info: String, completion: @escaping (User?) -> Void) {
+    static func create(_ firUser: FIRUser, displayName: String, age: String, gender: Bool, level: String, country: String, city: String, phoneNumber: String, info: String, completion: @escaping (User?) -> Void) {
         
         let userAttrs = ["displayName":displayName, "age":age, "gender":gender, "level":level, "country":country, "city":city, "phoneNumber":phoneNumber, "info":info] as [String : Any]
         

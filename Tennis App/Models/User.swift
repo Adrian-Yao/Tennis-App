@@ -16,9 +16,9 @@ class User: NSObject {
     
     let uid: String
     let displayName: String?
-    let age: Int?
-    let gender: Bool?
-    let level: Float?
+    let age: String?
+    let gender: String?
+    let level: String?
     let country: String?
     let city: String?
     let phoneNumber: String?
@@ -26,7 +26,7 @@ class User: NSObject {
     
     // MARK: - Init
     
-    init(uid: String, displayName:String?, age:Int?, gender: Bool?, level: Float?, country: String?, city: String?, phoneNumber: String?, info: String?) {
+    init(uid: String, displayName:String?, age:String?, gender: String?, level: String?, country: String?, city: String?, phoneNumber: String?, info: String?) {
         self.uid = uid
         self.displayName = displayName
         self.age = age
@@ -43,9 +43,9 @@ class User: NSObject {
     init?(snapshot: DataSnapshot) {
         guard let dict = snapshot.value as? [String : Any],
             let displayName = dict["displayName"] as? String,
-            let age = dict["age"] as? Int,
-            let gender = dict["gender"] as? Bool,
-            let level = dict["level"] as? Float,
+            let age = dict["age"] as? String,
+            let gender = dict["gender"] as? String,
+            let level = dict["level"] as? String,
             let country = dict["country"] as? String,
             let city = dict["city"] as? String,
             let phoneNumber = dict["phonenumber"] as? String,
@@ -70,9 +70,9 @@ class User: NSObject {
     required init?(coder aDecoder: NSCoder) {
         guard let uid = aDecoder.decodeObject(forKey: Constants.UserDefaults.uid) as? String,
             let displayName = aDecoder.decodeObject(forKey: Constants.UserDefaults.displayName) as? String,
-            let age = aDecoder.decodeObject(forKey:Constants.UserDefaults.age) as? Int,
-        let gender = aDecoder.decodeObject(forKey:Constants.UserDefaults.gender) as? Bool,
-        let level = aDecoder.decodeObject(forKey:Constants.UserDefaults.level) as? Float,
+            let age = aDecoder.decodeObject(forKey:Constants.UserDefaults.age) as? String,
+        let gender = aDecoder.decodeObject(forKey:Constants.UserDefaults.gender) as? String,
+        let level = aDecoder.decodeObject(forKey:Constants.UserDefaults.level) as? String,
             let country = aDecoder.decodeObject(forKey:Constants.UserDefaults.country) as? String,
             let city = aDecoder.decodeObject(forKey:Constants.UserDefaults.city) as? String,
             let phoneNumber = aDecoder.decodeObject(forKey:Constants.UserDefaults.phoneNumber) as? String,
