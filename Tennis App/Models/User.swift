@@ -48,8 +48,8 @@ class User: NSObject {
             let level = dict["level"] as? String,
             let country = dict["country"] as? String,
             let city = dict["city"] as? String,
-            let phoneNumber = dict["phonenumber"] as? String,
-            let info = dict["info?"] as? String
+            let phoneNumber = dict["phoneNumber"] as? String,
+            let info = dict["info"] as? String
 
         
             else { return nil }

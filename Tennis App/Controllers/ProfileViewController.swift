@@ -49,9 +49,9 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     
     
-  //  MARK - Instance Methods
+    //  MARK - Instance Methods
     
-
+    
     
     //OVERRIDE FUNCTIONS
     
@@ -65,7 +65,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         // Do any additional setup after loading the view, typically from a nib.
         self.hideKeyboardWhenTappedAround()
         
-      
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -89,8 +89,8 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     //ACTION
     
-
-
+    
+    
     
     
     @IBAction func profileButtonTapped(_ sender: Any) {
@@ -110,10 +110,10 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     @IBAction func matchButtonTapped(_ sender: Any) {
         
-        var ageValue = String(agePicker.selectedRow(inComponent: 1) + 18)
-//        var genderValue = Bool(genderSegmentControl.value)
+        var ageValue = String(agePicker.selectedRow(inComponent: 0) + 18)
+        //        var genderValue = Bool(genderSegmentControl.value)
         let genderValue: String? = genderSegmentControl.titleForSegment(at: genderSegmentControl.selectedSegmentIndex)!
-        var levelValue = String(levelPicker.selectedRow(inComponent: 1)/2)
+        var levelValue = String(levelPicker.selectedRow(inComponent: 0)/2)
         
         guard let firUser = Auth.auth().currentUser,
             let displayName = nameTextField.text,
@@ -133,26 +133,26 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
             let info = infoTextView.text,
             !info.isEmpty
             
-        
+            
             
             else { return }
         
-                UserService.create(firUser, displayName: displayName, age: age, gender:gender, level:level!, country:country!, city:city!, phoneNumber:phoneNumber!,info:info!) { (user) in
-            guard let user = user
+        UserService.create(firUser, displayName: displayName, age: age, gender:gender, level:level, country:country, city:city, phoneNumber:phoneNumber,info:info) { (retrievedUser) in
+            guard let user = retrievedUser
                 else {
                     // handle error
                     return
             }
             
             User.setCurrent(user, writeToUserDefaults: true)
-            
-            let initialViewController = UIStoryboard.initialViewController(for: .main)
+            let storyboard = UIStoryboard(name: "Main", bundle: .main)
+            let initialViewController = storyboard.instantiateInitialViewController()
             self.view.window?.rootViewController = initialViewController
             self.view.window?.makeKeyAndVisible()
         }
         
         
-      
+        
         
         print("MATCH BUTTON ICE CREAM")
         
