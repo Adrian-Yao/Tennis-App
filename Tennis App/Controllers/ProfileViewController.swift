@@ -80,7 +80,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     @IBOutlet weak var agePicker: UIPickerView!
     @IBOutlet weak var genderSegmentControl: UISegmentedControl!
     @IBOutlet weak var levelPicker: UIPickerView!
-    @IBOutlet weak var contryTextField: UITextField!
+    @IBOutlet weak var countryTextField: UITextField!
     @IBOutlet weak var cityTextField: UITextField!
     @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var infoTextView: UITextView!
@@ -111,15 +111,27 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     @IBAction func matchButtonTapped(_ sender: Any) {
         
         var ageValue = String(agePicker.selectedRow(inComponent: 1) + 18)
-
-        
+//        var genderValue = Bool(genderSegmentControl.value)
+        let genderValue: String? = genderSegmentControl.titleForSegment(at: genderSegmentControl.selectedSegmentIndex)!
+        var levelValue = String(levelPicker.selectedRow(inComponent: 1)/2)
         
         guard let firUser = Auth.auth().currentUser,
             let displayName = nameTextField.text,
             !displayName.isEmpty,
             let age = String(ageValue),
-            !(ageValue.isEmpty)
-            
+            !(ageValue.isEmpty),
+            let gender = genderValue,
+            !(genderValue?.isEmpty)!,
+            let level = String(levelValue),
+            !(levelValue.isEmpty),
+            let country = countryTextField.text,
+            !country.isEmpty,
+            let city = cityTextField.text,
+            !city.isEmpty,
+            let phoneNumber = phoneNumberTextField.text,
+            !phoneNumber.isEmpty,
+            let info = infoTextView.text,
+            !info.isEmpty
             
         
             
