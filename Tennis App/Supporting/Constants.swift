@@ -10,12 +10,11 @@ import Foundation
 
 struct Constants {
     struct Segue {
-        static let toCreateUsername = "toCreateUsername"
+        static let toCreateProfile = "toCreateProfile"
     }
     struct UserDefaults {
         static let currentUser = "currentUser"
         static let uid = "uid"
-        static let username = "username"
         static let age = "age"
         static let displayName = "displayName"
         static let gender = "gender"

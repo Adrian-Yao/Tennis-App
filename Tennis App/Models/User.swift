@@ -15,7 +15,7 @@ class User: NSObject {
     // MARK: - Properties
     
     let uid: String
-    let username: String
+    let displayName: String?
     let age: Int?
     let gender: Bool?
     let level: Float?
@@ -26,9 +26,9 @@ class User: NSObject {
     
     // MARK: - Init
     
-    init(uid: String, username: String, age:Int?, gender: Bool?, level: Float?, country: String?, city: String?, phoneNumber: String?, info: String?) {
+    init(uid: String, displayName:String?, age:Int?, gender: Bool?, level: Float?, country: String?, city: String?, phoneNumber: String?, info: String?) {
         self.uid = uid
-        self.username = username
+        self.displayName = displayName
         self.age = age
         self.gender = gender
         self.level = level
@@ -42,7 +42,7 @@ class User: NSObject {
     
     init?(snapshot: DataSnapshot) {
         guard let dict = snapshot.value as? [String : Any],
-            let username = dict["username"] as? String,
+            let displayName = dict["displayName"] as? String,
             let age = dict["age"] as? Int,
             let gender = dict["gender"] as? Bool,
             let level = dict["level"] as? Float,
@@ -55,7 +55,7 @@ class User: NSObject {
             else { return nil }
         
         self.uid = snapshot.key
-        self.username = username
+        self.displayName = displayName
         self.age = age
         self.gender = gender
         self.level = level
@@ -69,7 +69,7 @@ class User: NSObject {
     
     required init?(coder aDecoder: NSCoder) {
         guard let uid = aDecoder.decodeObject(forKey: Constants.UserDefaults.uid) as? String,
-            let username = aDecoder.decodeObject(forKey: Constants.UserDefaults.username) as? String,
+            let displayName = aDecoder.decodeObject(forKey: Constants.UserDefaults.displayName) as? String,
             let age = aDecoder.decodeObject(forKey:Constants.UserDefaults.age) as? Int,
         let gender = aDecoder.decodeObject(forKey:Constants.UserDefaults.gender) as? Bool,
         let level = aDecoder.decodeObject(forKey:Constants.UserDefaults.level) as? Float,
@@ -81,7 +81,7 @@ class User: NSObject {
             else { return nil }
         
         self.uid = uid
-        self.username = username
+        self.displayName = displayName
         self.age = age
         self.gender = gender
         self.level = level
@@ -133,7 +133,14 @@ class User: NSObject {
 extension User: NSCoding {
     func encode(with aCoder: NSCoder) {
         aCoder.encode(uid, forKey: Constants.UserDefaults.uid)
-        aCoder.encode(username, forKey: Constants.UserDefaults.username)
+        aCoder.encode(displayName, forKey: Constants.UserDefaults.displayName)
+        aCoder.encode(age, forKey: Constants.UserDefaults.age)
+        aCoder.encode(gender, forKey:Constants.UserDefaults.gender)
+        aCoder.encode(level, forKey:Constants.UserDefaults.level)
+        aCoder.encode(country, forKey: Constants.UserDefaults.country)
+        aCoder.encode(city, forKey: Constants.UserDefaults.city)
+        aCoder.encode(phoneNumber, forKey:Constants.UserDefaults.phoneNumber)
+        aCoder.encode(info, forKey:Constants.UserDefaults.info)
         
     }
 }

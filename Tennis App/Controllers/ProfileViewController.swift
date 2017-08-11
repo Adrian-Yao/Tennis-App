@@ -7,10 +7,11 @@
 //
 
 import UIKit
-
+import FirebaseAuth
+import FirebaseDatabase
 
 class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
-
+    
     var age: Int?
     var gender: Bool?
     var level: Float?
@@ -18,7 +19,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     var city: String?
     var phoneNumber: String?
     var info: String?
-    
+    var value: String?
     //PICKER VIEWS
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -34,6 +35,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         }
     }
     
+    
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         if pickerView.tag == 0 {
@@ -46,6 +48,11 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     }
     
     
+    
+  //  MARK - Instance Methods
+    
+
+    
     //OVERRIDE FUNCTIONS
     
     override func viewDidLoad() {
@@ -57,15 +64,17 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         
         // Do any additional setup after loading the view, typically from a nib.
         self.hideKeyboardWhenTappedAround()
+        
+      
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
- 
-//OUTLET
+    
+    
+    //OUTLET
     @IBOutlet weak var profilePicButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var agePicker: UIPickerView!
@@ -79,6 +88,9 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     
     //ACTION
+    
+
+
     
     
     @IBAction func profileButtonTapped(_ sender: Any) {
@@ -98,19 +110,45 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     @IBAction func matchButtonTapped(_ sender: Any) {
         
-//        Profile(age: agePicker.numberOfComponents, gender: genderSegmentControl.apportionsSegmentWidthsByContent, level: Float(levelPicker.numberOfComponents), country: contryTextField.text, city: cityTextField.text, phoneNumber: phoneNumberTextField.text, info: infoTextView.text)
+        var ageValue = String(agePicker.selectedRow(inComponent: 1) + 18)
+
         
         
+        guard let firUser = Auth.auth().currentUser,
+            let displayName = nameTextField.text,
+            !displayName.isEmpty,
+            let age = String(ageValue),
+            !(ageValue.isEmpty)
+            
+            
+        
+            
+            else { return }
+        
+                UserService.create(firUser, displayName: displayName, age: age, gender:gender!, level:level!, country:country!, city:city!, phoneNumber:phoneNumber!,info:info!) { (user) in
+            guard let user = user
+                else {
+                    // handle error
+                    return
+            }
+            
+            User.setCurrent(user, writeToUserDefaults: true)
+            
+            let initialViewController = UIStoryboard.initialViewController(for: .main)
+            self.view.window?.rootViewController = initialViewController
+            self.view.window?.makeKeyAndVisible()
+        }
         
         
+      
         
         print("MATCH BUTTON ICE CREAM")
-
+        
     }
-  
     
     
-
+    
+    
 }
 
 //EXTENSIONS
