@@ -100,7 +100,7 @@
         <!--Profile View Controller-->
         <scene sceneID="A1v-hl-SPd">
             <objects>
-                <viewController id="mBi-H3-oD4" customClass="ProfileViewController" customModule="Tennis_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" id="mBi-H3-oD4" customClass="ProfileViewController" customModule="Tennis_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="45z-zn-Jb9"/>
                         <viewControllerLayoutGuide type="bottom" id="Zfe-cc-mlD"/>

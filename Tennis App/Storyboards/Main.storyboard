@@ -11,6 +11,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--ProfileViewController-->
+        <scene sceneID="2cn-pT-mTh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="ProfileViewController" id="e1d-F4-V8j" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="awC-zR-UYu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2039" y="-156"/>
+        </scene>
         <!--List Notes Table View Controller-->
         <scene sceneID="dVB-iI-rHt">
             <objects>
@@ -63,7 +71,19 @@
                             <outlet property="delegate" destination="bmy-2V-fLN" id="zEh-AS-hFI"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Best Mates" id="crc-2b-Hvc" userLabel="Best Mates"/>
+                    <navigationItem key="navigationItem" title="Best Mates" id="uyZ-Ey-0il">
+                        <barButtonItem key="leftBarButtonItem" title="Back" style="plain" id="Chj-gs-dIN">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VOu-cB-icD">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="e1d-F4-V8j" kind="show" id="bXu-xM-uVb"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XuV-Xy-1UT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
