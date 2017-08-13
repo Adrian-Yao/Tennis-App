@@ -110,10 +110,10 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     @IBAction func matchButtonTapped(_ sender: Any) {
         
-        var ageValue = String(agePicker.selectedRow(inComponent: 0) + 18)
+        let ageValue = String(agePicker.selectedRow(inComponent: 0) + 18)
         //        var genderValue = Bool(genderSegmentControl.value)
         let genderValue: String? = genderSegmentControl.titleForSegment(at: genderSegmentControl.selectedSegmentIndex)!
-        var levelValue = String(levelPicker.selectedRow(inComponent: 0)/2)
+        let levelValue = String(levelPicker.selectedRow(inComponent: 0)/2)
         
         guard let firUser = Auth.auth().currentUser,
             let displayName = nameTextField.text,

@@ -35,28 +35,41 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNO-xA-wwM">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNO-xA-wwM">
                                             <rect key="frame" x="26" y="19" width="51" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kj-gK-jmC">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kj-gK-jmC">
                                             <rect key="frame" x="302" y="20" width="49" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aS-1j-WJh">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aS-1j-WJh">
                                             <rect key="frame" x="167" y="20" width="41" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="41" id="qgj-6H-kEg"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="2kj-gK-jmC" secondAttribute="trailing" constant="16" id="1cu-Lj-eHF"/>
+                                        <constraint firstItem="YNO-xA-wwM" firstAttribute="leading" secondItem="WNG-PL-AMr" secondAttribute="leadingMargin" constant="18" id="2fg-X4-39l"/>
+                                        <constraint firstItem="8aS-1j-WJh" firstAttribute="firstBaseline" secondItem="2kj-gK-jmC" secondAttribute="firstBaseline" id="30h-Jm-k9i"/>
+                                        <constraint firstItem="YNO-xA-wwM" firstAttribute="top" secondItem="WNG-PL-AMr" secondAttribute="topMargin" constant="11" id="JxY-HE-Nyt"/>
+                                        <constraint firstItem="YNO-xA-wwM" firstAttribute="centerY" secondItem="WNG-PL-AMr" secondAttribute="centerY" id="KK8-Cm-25h"/>
+                                        <constraint firstItem="2kj-gK-jmC" firstAttribute="leading" secondItem="8aS-1j-WJh" secondAttribute="trailing" constant="94" id="MnM-XR-Xi9"/>
+                                        <constraint firstItem="8aS-1j-WJh" firstAttribute="top" secondItem="WNG-PL-AMr" secondAttribute="topMargin" constant="12" id="dgw-FV-QhV"/>
+                                        <constraint firstItem="8aS-1j-WJh" firstAttribute="centerY" secondItem="WNG-PL-AMr" secondAttribute="centerY" id="eLH-cz-vHe"/>
+                                        <constraint firstItem="8aS-1j-WJh" firstAttribute="leading" secondItem="YNO-xA-wwM" secondAttribute="trailing" constant="90" id="jGZ-0A-i6p"/>
+                                        <constraint firstItem="8aS-1j-WJh" firstAttribute="centerX" secondItem="WNG-PL-AMr" secondAttribute="centerX" id="rcI-TE-oCe"/>
+                                        <constraint firstItem="8aS-1j-WJh" firstAttribute="baseline" secondItem="2kj-gK-jmC" secondAttribute="baseline" id="vij-nT-lTT"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="infoButton" destination="8aS-1j-WJh" id="4IL-Qs-HEq"/>
