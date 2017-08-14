@@ -9,8 +9,13 @@
 import UIKit
 
 class ListNotesTableViewController: UITableViewController {
-//         [self.storyboard instantiateViewControllerWithIdentifier:@"ProfileViewControllerID"];
- 
+
+    var user = [User]() {
+        didSet {
+            tableView.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -22,7 +27,7 @@ class ListNotesTableViewController: UITableViewController {
 }
     // 1
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return user.count
     }
     
     // 2
@@ -30,26 +35,38 @@ class ListNotesTableViewController: UITableViewController {
         // 1
         let cell = tableView.dequeueReusableCell(withIdentifier: "listNotesTableViewCell", for: indexPath) as! ListNotesTableViewCell
         
+        let row = indexPath.row
+        let user = self.user[row]
+
+
         // 2
-        cell.nameButton.text = "Name"
-        cell.infoButton.text = "Info"
-        cell.levelButton.text = "Level"
+        cell.nameButton.text = user.displayName
+        cell.phoneNumberButton.text = user.phoneNumber
+        cell.levelButton.text = user.level
         
         return cell
     }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // 1
         if let identifier = segue.identifier {
-            // 2
             if identifier == "displayNote" {
+                print("Table view cell tapped")
+                
+                // 1
+                let indexPath = tableView.indexPathForSelectedRow!
+                // 2
+                let user = self.user[indexPath.row]
                 // 3
-                print("Transitioning to the Display Note View Controller")
+                let displayInfoTableViewController = segue.destination as! DisplayInfoTableViewController
+                // 4
+                displayInfoTableViewController.user = user
+                
+            } else if identifier == "addNote" {
+                print("+ button tapped")
             }
         }
     }
-    
     
 //    @IBAction func goBackToProfile(_ sender: Any) {
 //        performSegue(withIdentifier: "unwindSegueToVC1", sender: self)

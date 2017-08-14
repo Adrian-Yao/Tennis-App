@@ -13,7 +13,7 @@ class ListNotesTableViewCell: UITableViewCell {
     
     
     @IBOutlet weak var nameButton: UILabel!
-    @IBOutlet weak var infoButton: UILabel!
+    @IBOutlet weak var phoneNumberButton: UILabel!
     @IBOutlet weak var levelButton: UILabel!
     
 }

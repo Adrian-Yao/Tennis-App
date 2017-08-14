@@ -11,6 +11,7 @@
 		5E0724CC1F38E0BD0006E12F /* ListNotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0724CB1F38E0BD0006E12F /* ListNotesTableViewCell.swift */; };
 		5E2531FD1F3CA138000CBDC7 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2531FC1F3CA138000CBDC7 /* Profile.swift */; };
 		5E2531FF1F3CA4E1000CBDC7 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2531FE1F3CA4E1000CBDC7 /* ProfileService.swift */; };
+		5E3F41671F42011900FCEA3A /* DisplayInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3F41661F42011900FCEA3A /* DisplayInfoTableViewController.swift */; };
 		5E84C3A51F324A1D005E973D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84C3A41F324A1D005E973D /* ProfileViewController.swift */; };
 		5E84C3A71F324A32005E973D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E84C3A61F324A32005E973D /* LaunchScreen.storyboard */; };
 		5E84C3A91F324A3B005E973D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E84C3A81F324A3B005E973D /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		5E0724CB1F38E0BD0006E12F /* ListNotesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListNotesTableViewCell.swift; path = "Tennis App/Views/ListNotesTableViewCell.swift"; sourceTree = "<group>"; };
 		5E2531FC1F3CA138000CBDC7 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = Models/Profile.swift; sourceTree = "<group>"; };
 		5E2531FE1F3CA4E1000CBDC7 /* ProfileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileService.swift; path = Services/ProfileService.swift; sourceTree = "<group>"; };
+		5E3F41661F42011900FCEA3A /* DisplayInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisplayInfoTableViewController.swift; path = Controllers/DisplayInfoTableViewController.swift; sourceTree = "<group>"; };
 		5E84C3A41F324A1D005E973D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Controllers/ProfileViewController.swift; sourceTree = "<group>"; };
 		5E84C3A61F324A32005E973D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E84C3A81F324A3B005E973D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				5E84C3B31F32529E005E973D /* LoginViewController.swift */,
 				5E84C3BB1F3376E3005E973D /* CreateUsernameViewController.swift */,
 				5E0724C81F38BEF40006E12F /* ListNotesTableViewController.swift */,
+				5E3F41661F42011900FCEA3A /* DisplayInfoTableViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			files = (
 				5E84C3BA1F336CBA005E973D /* User.swift in Sources */,
 				5E0724C91F38BEF40006E12F /* ListNotesTableViewController.swift in Sources */,
+				5E3F41671F42011900FCEA3A /* DisplayInfoTableViewController.swift in Sources */,
 				5E84C3B41F32529E005E973D /* LoginViewController.swift in Sources */,
 				5E84C3BF1F337F05005E973D /* UserService.swift in Sources */,
 				5E84C3A51F324A1D005E973D /* ProfileViewController.swift in Sources */,
