@@ -329,11 +329,18 @@
                                     <action selector="matchButtonTapped:" destination="mBi-H3-oD4" eventType="touchUpInside" id="QSW-TF-i6J"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dGT-0y-INp">
-                                <rect key="frame" x="54" y="75" width="282" height="42"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXC-Zj-GZd">
+                                <rect key="frame" x="75" y="543" width="225" height="0.0"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="dGT-0y-INp">
+                                <rect key="frame" x="54" y="75" width="284" height="42"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fill Out Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r8X-4M-b7O">
-                                        <rect key="frame" x="56.5" y="0.0" width="169.5" height="21.5"/>
+                                        <rect key="frame" x="57" y="0.0" width="170" height="22"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21.5" id="QHR-9P-8p0"/>
                                             <constraint firstAttribute="width" constant="169.5" id="jIH-tT-YZN"/>
@@ -342,28 +349,29 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="They would like to know more about you!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Zm-9h-4Lv">
-                                        <rect key="frame" x="0.0" y="21.5" width="282" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your buddy wants you to fill all the boxes!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Zm-9h-4Lv">
+                                        <rect key="frame" x="0.0" y="24" width="284" height="18"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="15"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="6Zm-9h-4Lv" firstAttribute="leading" secondItem="dGT-0y-INp" secondAttribute="leading" id="uox-ym-Vbn"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.8980392157" green="0.77647058820000003" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="dGT-0y-INp" firstAttribute="leading" secondItem="XXX-oZ-OmX" secondAttribute="leading" id="0uj-XP-G97"/>
                             <constraint firstItem="XXX-oZ-OmX" firstAttribute="centerY" secondItem="Z37-mz-Qt5" secondAttribute="centerY" id="C6G-BW-d6a"/>
-                            <constraint firstItem="XXX-oZ-OmX" firstAttribute="top" secondItem="dGT-0y-INp" secondAttribute="bottom" constant="25" id="Cs4-FX-pPD"/>
                             <constraint firstItem="eJd-mO-0nG" firstAttribute="leading" secondItem="Z37-mz-Qt5" secondAttribute="leadingMargin" constant="59" id="OXb-zl-Ny4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dGT-0y-INp" secondAttribute="trailing" constant="21" id="WRs-ur-PRI"/>
                             <constraint firstItem="XXX-oZ-OmX" firstAttribute="leading" secondItem="Z37-mz-Qt5" secondAttribute="leadingMargin" constant="38" id="Xya-P9-7so"/>
+                            <constraint firstItem="NXC-Zj-GZd" firstAttribute="trailing" secondItem="eJd-mO-0nG" secondAttribute="trailing" id="Ya0-ln-4C0"/>
+                            <constraint firstItem="XXX-oZ-OmX" firstAttribute="top" secondItem="dGT-0y-INp" secondAttribute="bottom" constant="15" id="auD-2i-KT5"/>
+                            <constraint firstItem="NXC-Zj-GZd" firstAttribute="leading" secondItem="eJd-mO-0nG" secondAttribute="leading" id="cKW-5E-OGd"/>
+                            <constraint firstItem="dGT-0y-INp" firstAttribute="top" secondItem="45z-zn-Jb9" secondAttribute="bottom" constant="55" id="hGw-xq-8hy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XXX-oZ-OmX" secondAttribute="trailing" constant="23" id="roN-Af-79S"/>
                             <constraint firstItem="eJd-mO-0nG" firstAttribute="top" secondItem="XXX-oZ-OmX" secondAttribute="bottom" constant="40" id="s23-pg-6E0"/>
                             <constraint firstItem="eJd-mO-0nG" firstAttribute="centerX" secondItem="Z37-mz-Qt5" secondAttribute="centerX" id="u9n-Tf-E1F"/>
+                            <constraint firstItem="NXC-Zj-GZd" firstAttribute="top" secondItem="XXX-oZ-OmX" secondAttribute="bottom" constant="8" symbolic="YES" id="vNe-kO-aF0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Rsn-Rl-1iw"/>
@@ -371,6 +379,7 @@
                         <outlet property="agePicker" destination="6YB-Pm-Ngf" id="kWZ-3W-2G9"/>
                         <outlet property="cityTextField" destination="DGu-Qo-qw6" id="vWx-PG-M2C"/>
                         <outlet property="countryTextField" destination="47w-PD-9is" id="cQJ-UC-JKA"/>
+                        <outlet property="errorLabel" destination="NXC-Zj-GZd" id="4eo-NB-Yz3"/>
                         <outlet property="genderSegmentControl" destination="0NY-Q0-62b" id="qa0-g3-8Je"/>
                         <outlet property="infoTextView" destination="T2k-lI-0nD" id="XmG-cJ-MTa"/>
                         <outlet property="levelPicker" destination="1b4-2w-7cs" id="pZB-QW-Vrp"/>
@@ -382,7 +391,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2xI-4E-cld" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1932" y="163"/>
+            <point key="canvasLocation" x="1932" y="162.3688155922039"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="cvT-98-Yyy">
@@ -400,7 +409,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kiE-ep-XcK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2564" y="163"/>
+            <point key="canvasLocation" x="2734" y="163"/>
         </scene>
     </scenes>
 </document>

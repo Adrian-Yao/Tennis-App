@@ -85,6 +85,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var infoTextView: UITextView!
     @IBOutlet weak var matchButton: UIButton!
+    @IBOutlet weak var errorLabel: UILabel!
     
     
     //ACTION
@@ -132,11 +133,34 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
             !phoneNumber.isEmpty,
             let info = infoTextView.text,
             !info.isEmpty
-            
-            
-            
-            else { return }
+
+            else {
+                let alertController = UIAlertController(title: "Fill out all boxes", message: "for improved accuracy of a good buddy.", preferredStyle: .alert)
+                
+//                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { action in
+//                    // ...
+//                }
+//                alertController.addAction(cancelAction)
+                
+                let OKAction = UIAlertAction(title: "OK", style: .default) { action in
+                    // ...
+                }
+                alertController.addAction(OKAction)
+                
+                self.present(alertController, animated: true) {
+                    // ...
+                }
+                return
+        }
         
+//        if (nameTextField.text == "" || nameTextField.text == "" || countryTextField.text == "" || cityTextField.text == "" || phoneNumberTextField.text == "" || infoTextView.text == "")  {
+//            
+//            errorLabel.text = "You need to fill out all fields"
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//                self.errorLabel.text = ""
+//            }
+//        }
+//        
         UserService.create(firUser, displayName: displayName, age: age, gender:gender, level:level, country:country, city:city, phoneNumber:phoneNumber,info:info) { (retrievedUser) in
             guard let user = retrievedUser
                 else {
