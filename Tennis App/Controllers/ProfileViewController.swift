@@ -29,7 +29,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         if pickerView.tag == 0 {
             return 83
         } else if pickerView.tag == 1 {
-            return 15
+            return 13
         } else {
             return 0
         }
@@ -41,7 +41,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         if pickerView.tag == 0 {
             return String(row + 18) //age
         } else if pickerView.tag == 1 {
-            return String(Double(row) / 2 ) //level
+            return String(Double((row) + 2) / 2 ) //level
         } else {
             return ""
         }
