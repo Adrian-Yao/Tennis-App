@@ -9,9 +9,24 @@
 import UIKit
 
 class DisplayInfoTableViewController: UITableViewController {
+    var user: User?
+    var users: [User]?
+    
+    @IBOutlet weak var displayName2: UILabel!
+    @IBOutlet weak var displayAge: UILabel!
+    @IBOutlet weak var displayGender: UILabel!
+    @IBOutlet weak var displayInfo: UILabel!
+    @IBOutlet weak var displayLevel: UILabel!
+    @IBOutlet weak var displayCity: UILabel!
+    @IBOutlet weak var displayCountry: UILabel!
+    @IBOutlet weak var displayPhoneNumber: UILabel!
 
     override func viewDidLoad() {
-        super.viewDidLoad()
+         super.viewDidLoad()
+        
+      
+        
+       
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -19,7 +34,41 @@ class DisplayInfoTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//            // if note exists, update title and content
+//            let note = self.note ?? CoreDataHelper.newNote()
+//            note.title = noteTitleTextField.text ?? ""
+//            note.content = noteContentTextView.text ?? ""
+//            note.modificationTime = Date() as NSDate
+//        }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // 1
+        if let user = user {
+            // 2
+            displayName2.text = user.displayName
+            displayAge.text = user.age
+            displayGender.text = user.gender
+            displayInfo.text = user.info
+            displayLevel.text = user.level
+            displayCity.text = user.city
+            displayCountry.text = user.country
+            displayPhoneNumber.text = user.phoneNumber
+        } else {
+            // 3
+            displayName2.text = ""
+            displayAge.text = ""
+            displayGender.text = ""
+            displayInfo.text = ""
+            displayLevel.text = ""
+            displayCity.text = ""
+            displayCountry.text = ""
+            displayPhoneNumber.text = ""
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

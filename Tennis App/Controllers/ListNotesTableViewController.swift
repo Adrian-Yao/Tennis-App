@@ -17,7 +17,12 @@ class ListNotesTableViewController: UITableViewController {
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        UserService.timeline{ (users) in
+            self.user = users
+        }
+        
     }
     
     
