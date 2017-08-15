@@ -21,19 +21,28 @@ class DisplayInfoTableViewController: UIViewController {
     @IBOutlet weak var displayCountry: UILabel!
     @IBOutlet weak var displayPhoneNumber: UILabel!
 
+    
+    
+    @IBAction func NTRPLink(_ sender: Any) {
+        openUrl(urlStr: "http://assets.usta.com/assets/639/15/National%20tennis%20Rating%20Program.pdf")
+    }
+    
+    func openUrl(urlStr:String!) {
+        
+        if let url = NSURL(string:urlStr) {
+            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        }
+    }
     override func viewDidLoad() {
          super.viewDidLoad()
-        
-      
-        
-       
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
+    
+    
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //            // if note exists, update title and content

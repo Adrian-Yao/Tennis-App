@@ -167,12 +167,24 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="K2P-1C-GP9">
                                         <rect key="frame" x="0.0" y="193.5" width="345" height="30"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skill Level (NTRP):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbF-tq-BFu">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JSF-9a-fPd">
                                                 <rect key="frame" x="0.0" y="0.0" width="155" height="30"/>
-                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
-                                                <color key="textColor" red="0.30588235294117649" green="0.34901960784313724" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="Skill Level (NTRP):">
+                                                            <attributes>
+                                                                <color key="NSColor" red="0.30588235294117649" green="0.34901960784313724" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <font key="NSFont" size="18" name="Avenir-Heavy"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                <integer key="NSUnderline" value="1"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="NTRPLink:" destination="Syp-V7-fI6" eventType="touchUpInside" id="evV-oY-Y4U"/>
+                                                </connections>
+                                            </button>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skill Level Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50I-fv-wbm">
                                                 <rect key="frame" x="195" y="0.0" width="150" height="30"/>
                                                 <color key="backgroundColor" red="0.30588235294117649" green="0.34901960784313724" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
@@ -229,7 +241,6 @@
                                                 </userDefinedRuntimeAttributes>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.30588235294117649" green="0.85915798611111116" blue="0.81089952256944442" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="q3S-MD-Oyp"/>
                                         </constraints>
