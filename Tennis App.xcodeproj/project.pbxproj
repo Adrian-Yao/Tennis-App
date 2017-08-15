@@ -12,13 +12,13 @@
 		5E2531FD1F3CA138000CBDC7 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2531FC1F3CA138000CBDC7 /* Profile.swift */; };
 		5E2531FF1F3CA4E1000CBDC7 /* ProfileService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2531FE1F3CA4E1000CBDC7 /* ProfileService.swift */; };
 		5E3F41671F42011900FCEA3A /* DisplayInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3F41661F42011900FCEA3A /* DisplayInfoTableViewController.swift */; };
+		5E3F416B1F43474F00FCEA3A /* usopen2009trophy1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E3F416A1F43474F00FCEA3A /* usopen2009trophy1.jpg */; };
 		5E84C3A51F324A1D005E973D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84C3A41F324A1D005E973D /* ProfileViewController.swift */; };
 		5E84C3A71F324A32005E973D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E84C3A61F324A32005E973D /* LaunchScreen.storyboard */; };
 		5E84C3A91F324A3B005E973D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E84C3A81F324A3B005E973D /* Main.storyboard */; };
 		5E84C3AB1F324A47005E973D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E84C3AA1F324A47005E973D /* GoogleService-Info.plist */; };
 		5E84C3B21F3251A4005E973D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E84C3B11F3251A4005E973D /* Login.storyboard */; };
 		5E84C3B41F32529E005E973D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84C3B31F32529E005E973D /* LoginViewController.swift */; };
-		5E84C3B71F3258A0005E973D /* Racquet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5E84C3B61F3258A0005E973D /* Racquet.jpg */; };
 		5E84C3BA1F336CBA005E973D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84C3B91F336CBA005E973D /* User.swift */; };
 		5E84C3BC1F3376E3005E973D /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84C3BB1F3376E3005E973D /* CreateUsernameViewController.swift */; };
 		5E84C3BF1F337F05005E973D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E84C3BE1F337F05005E973D /* UserService.swift */; };
@@ -35,6 +35,7 @@
 		5E2531FC1F3CA138000CBDC7 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Profile.swift; path = Models/Profile.swift; sourceTree = "<group>"; };
 		5E2531FE1F3CA4E1000CBDC7 /* ProfileService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileService.swift; path = Services/ProfileService.swift; sourceTree = "<group>"; };
 		5E3F41661F42011900FCEA3A /* DisplayInfoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DisplayInfoTableViewController.swift; path = Controllers/DisplayInfoTableViewController.swift; sourceTree = "<group>"; };
+		5E3F416A1F43474F00FCEA3A /* usopen2009trophy1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = usopen2009trophy1.jpg; path = ../../../../../usopen2009trophy1.jpg; sourceTree = "<group>"; };
 		5E84C3A41F324A1D005E973D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Controllers/ProfileViewController.swift; sourceTree = "<group>"; };
 		5E84C3A61F324A32005E973D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Storyboards/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E84C3A81F324A3B005E973D /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 		5E84C3AC1F324A53005E973D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Supporting/Info.plist; sourceTree = "<group>"; };
 		5E84C3B11F3251A4005E973D /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
 		5E84C3B31F32529E005E973D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
-		5E84C3B61F3258A0005E973D /* Racquet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Racquet.jpg; path = ../../../../../Racquet.jpg; sourceTree = "<group>"; };
 		5E84C3B91F336CBA005E973D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
 		5E84C3BB1F3376E3005E973D /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateUsernameViewController.swift; path = Controllers/CreateUsernameViewController.swift; sourceTree = "<group>"; };
 		5E84C3BE1F337F05005E973D /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = Services/UserService.swift; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 		5E84C3B51F325895005E973D /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				5E84C3B61F3258A0005E973D /* Racquet.jpg */,
+				5E3F416A1F43474F00FCEA3A /* usopen2009trophy1.jpg */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -259,10 +259,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E84C3A91F324A3B005E973D /* Main.storyboard in Resources */,
-				5E84C3B71F3258A0005E973D /* Racquet.jpg in Resources */,
 				5E84C3AB1F324A47005E973D /* GoogleService-Info.plist in Resources */,
 				5E97D65C1F322BB5004018F3 /* Assets.xcassets in Resources */,
 				5E84C3B21F3251A4005E973D /* Login.storyboard in Resources */,
+				5E3F416B1F43474F00FCEA3A /* usopen2009trophy1.jpg in Resources */,
 				5E84C3A71F324A32005E973D /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

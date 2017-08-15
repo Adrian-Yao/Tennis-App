@@ -8,11 +8,14 @@
 
 import UIKit
 
-class ListNotesTableViewController: UITableViewController {
+class ListNotesTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet var tableView: UITableView!
+    
     var user = [User]() {
         didSet {
             tableView.reloadData()
+        
         }
     }
     
@@ -22,21 +25,21 @@ class ListNotesTableViewController: UITableViewController {
         UserService.timeline{ (users) in
             self.user = users
         }
-        
     }
     
     
     @IBAction func backAction(_ sender: Any) {
     
-        present( UIStoryboard(name: "ListNotesViewController", bundle: nil).instantiateViewController(withIdentifier: "ProfileViewControllerID") as UIViewController, animated: true, completion: nil)
-}
+        present( UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "ProfileViewControllerID") as UIViewController, animated: true, completion: nil)
+    }
     // 1
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return user.count
     }
     
     // 2
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // 1
         let cell = tableView.dequeueReusableCell(withIdentifier: "listNotesTableViewCell", for: indexPath) as! ListNotesTableViewCell
         
@@ -72,7 +75,8 @@ class ListNotesTableViewController: UITableViewController {
             }
         }
     }
-    
+}
+
 //    @IBAction func goBackToProfile(_ sender: Any) {
 //        performSegue(withIdentifier: "unwindSegueToVC1", sender: self)
 //
@@ -82,7 +86,7 @@ class ListNotesTableViewController: UITableViewController {
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-}
+
 
 //    override func didReceiveMemoryWarning() {
 //        super.didReceiveMemoryWarning()

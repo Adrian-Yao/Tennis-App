@@ -81,38 +81,22 @@
             endingLineNumber = "48"
             landmarkName = "timeline(completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static Tennis_App.UserService.timeline (completion : (Swift.Array&lt;Tennis_App.User&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Tennis App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adyao20/Desktop/Code/Make%20School%20Academy/IOS%20Apps/Tennis%20App/Tennis%20App/Services/UserService.swift"
-                  timestampString = "524434474.019268"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "392">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static Tennis_App.UserService.(timeline (completion : (Swift.Array&lt;Tennis_App.User&gt;) -&gt; ()) -&gt; ()).(closure #1)"
-                  moduleName = "Tennis App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/adyao20/Desktop/Code/Make%20School%20Academy/IOS%20Apps/Tennis%20App/Tennis%20App/Services/UserService.swift"
-                  timestampString = "524434474.021457"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "996">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tennis App/Services/UserService.swift"
+            timestampString = "524497437.87257"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "timeline(completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
