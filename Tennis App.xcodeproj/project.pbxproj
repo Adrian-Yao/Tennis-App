@@ -167,11 +167,11 @@
 		5E97D6531F322BB5004018F3 /* Tennis App */ = {
 			isa = PBXGroup;
 			children = (
+				5E97D6541F322BB5004018F3 /* AppDelegate.swift */,
 				5E84C3C21F339C33005E973D /* Extensions */,
 				5E84C3BD1F337EE8005E973D /* Services */,
 				5E84C3B81F336C9F005E973D /* Models */,
 				5E84C3B51F325895005E973D /* Images */,
-				5E97D6541F322BB5004018F3 /* AppDelegate.swift */,
 				5E0724CA1F38E07C0006E12F /* Views */,
 				5E84C3AE1F324B34005E973D /* View Controllers */,
 				5E84C3AF1F324B47005E973D /* Storyboards */,

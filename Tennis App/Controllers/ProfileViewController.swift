@@ -20,6 +20,9 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     var phoneNumber: String?
     var info: String?
     var value: String?
+    
+    var isNewUser: Bool = false
+    
     //PICKER VIEWS
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -66,7 +69,22 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         self.hideKeyboardWhenTappedAround()
         
         
+        if isNewUser == false {
+            let user = User.current
+            nameTextField.text = user.displayName
+            agePicker.selectRow(Int((user.age!))! - 18, inComponent: 0, animated: false)
+            if user.gender == "Male" { genderSegmentControl.selectedSegmentIndex = 0 }
+            else { genderSegmentControl.selectedSegmentIndex = 1 }
+            levelPicker.selectRow(Int((2.0 * Double((user.level!))!) - 2.0), inComponent: 0, animated: false)
+            countryTextField.text = user.country
+            cityTextField.text = user.city
+            phoneNumberTextField.text = user.phoneNumber
+            infoTextView.text = user.info
+            
+        }
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -114,7 +132,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         let ageValue = String(agePicker.selectedRow(inComponent: 0) + 18)
         //        var genderValue = Bool(genderSegmentControl.value)
         let genderValue: String? = genderSegmentControl.titleForSegment(at: genderSegmentControl.selectedSegmentIndex)!
-        let levelValue = String(levelPicker.selectedRow(inComponent: 0)/2)
+        let levelValue = String((levelPicker.selectedRow(inComponent: 0) + 2)/2)
         
         guard let firUser = Auth.auth().currentUser,
             let displayName = nameTextField.text,
@@ -133,14 +151,14 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
             !phoneNumber.isEmpty,
             let info = infoTextView.text,
             !info.isEmpty
-
+            
             else {
                 let alertController = UIAlertController(title: "Fill out all boxes", message: "for improved accuracy of your buddy.", preferredStyle: .alert)
                 
-//                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { action in
-//                    // ...
-//                }
-//                alertController.addAction(cancelAction)
+                //                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { action in
+                //                    // ...
+                //                }
+                //                alertController.addAction(cancelAction)
                 
                 let OKAction = UIAlertAction(title: "OK", style: .default) { action in
                     // ...
@@ -153,14 +171,14 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
                 return
         }
         
-//        if (nameTextField.text == "" || nameTextField.text == "" || countryTextField.text == "" || cityTextField.text == "" || phoneNumberTextField.text == "" || infoTextView.text == "")  {
-//            
-//            errorLabel.text = "You need to fill out all fields"
-//            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-//                self.errorLabel.text = ""
-//            }
-//        }
-//        
+        //        if (nameTextField.text == "" || nameTextField.text == "" || countryTextField.text == "" || cityTextField.text == "" || phoneNumberTextField.text == "" || infoTextView.text == "")  {
+        //
+        //            errorLabel.text = "You need to fill out all fields"
+        //            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        //                self.errorLabel.text = ""
+        //            }
+        //        }
+        //
         UserService.create(firUser, displayName: displayName, age: age, gender:gender, level:level, country:country, city:city, phoneNumber:phoneNumber,info:info) { (retrievedUser) in
             guard let user = retrievedUser
                 else {
@@ -182,8 +200,8 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         
     }
     
- 
-
+    
+    
     
 }
 

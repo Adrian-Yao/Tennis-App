@@ -99,9 +99,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <segue destination="e1d-F4-V8j" kind="popoverPresentation" popoverAnchorView="VOu-cB-icD" id="bXu-xM-uVb">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="e1d-F4-V8j" kind="show" action="showDetailViewController:sender:" id="bXu-xM-uVb"/>
                                 </connections>
                             </button>
                         </barButtonItem>
