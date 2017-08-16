@@ -135,7 +135,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
             !info.isEmpty
 
             else {
-                let alertController = UIAlertController(title: "Fill out all boxes", message: "for improved accuracy of a good buddy.", preferredStyle: .alert)
+                let alertController = UIAlertController(title: "Fill out all boxes", message: "for improved accuracy of your buddy.", preferredStyle: .alert)
                 
 //                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { action in
 //                    // ...

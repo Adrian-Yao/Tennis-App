@@ -169,6 +169,9 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JSF-9a-fPd">
                                                 <rect key="frame" x="0.0" y="0.0" width="155" height="30"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" link="YES"/>
+                                                </accessibility>
                                                 <state key="normal">
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="Skill Level (NTRP):">
