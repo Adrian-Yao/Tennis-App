@@ -57,9 +57,11 @@ struct UserService {
 
                         
                         if user.uid != User.current.uid {
-                          
-                        users.append(user)
-                        }}
+                            if User.current.country == user.country {
+                                    users.append(user)
+                            }
+                        }
+                    }
                     
                     dispatchGroup.leave()
                     }
