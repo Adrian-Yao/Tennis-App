@@ -23,6 +23,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     var isNewUser: Bool = false
     
+    
     //PICKER VIEWS
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -52,7 +53,8 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     
     
-    //  MARK - Instance Methods
+        //  MARK - Instance Methods
+    
     
     
     
