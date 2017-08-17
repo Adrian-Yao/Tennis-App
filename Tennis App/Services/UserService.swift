@@ -50,8 +50,16 @@ struct UserService {
                 dispatchGroup.enter()
                 UserService.show(forUID: user1) { (user) in
                     if let user = user {
+                        
+                        
+                        // if user uid not equal to current user uid,append user
+                     //   var withoutMeArray = [String]()
+
+                        
+                        if user.uid != User.current.uid {
+                          
                         users.append(user)
-                    }
+                        }}
                     
                     dispatchGroup.leave()
                     }
@@ -76,9 +84,43 @@ struct UserService {
             //})
             
             
-        
-        
-            
+//    static func usersExcludingCurrentUser(completion: @escaping ([User]) -> Void) {
+//        if let user = Auth.auth().currentUser{
+//            let ref = Database.database().reference().child("users")
+//            
+//            // 2
+//            ref.observeSingleEvent(of: .value, with: { (snapshot) in
+//                
+//                var myDic = snapshot.value as! NSDictionary
+//                
+//                var arrayOfUserIDs = myDic.allKeys as! [String]
+//                print(arrayOfUserIDs)
+//                var withoutMeArray = [String]()
+////                for otherUsers in arrayOfUserIDs{
+////                
+//                // Create a user with other users uid
+//                  if user.uid != otherUsers {
+//                        withoutMeArray.append(otherUsers)
+//                    }
+//                }
+//        
+//           
+//                
+//                print(withoutMeArray)
+//                
+//                
+//                
+//                
+//            //    completion(withoutMeArray)
+//
+//            })
+//
+//        }
+////        let currentUser = User.current
+//        // 1
+//            }
+//    
+    
             static func create(_ firUser: FIRUser, displayName: String, age: String, gender: String, level: String, country: String, city: String, phoneNumber: String, info: String, completion: @escaping (User?) -> Void) {
                 
                 let userAttrs = ["displayName":displayName, "age":age, "gender":gender, "level":level, "country":country, "city":city, "phoneNumber":phoneNumber, "info":info]

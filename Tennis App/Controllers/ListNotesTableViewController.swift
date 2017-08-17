@@ -27,6 +27,19 @@ class ListNotesTableViewController: UIViewController, UITableViewDataSource, UIT
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+//        UserService.usersExcludingCurrentUser { [unowned self] (user) in
+//            self.user = user
+        
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
+    
+
+    
     
     @IBAction func backAction(_ sender: Any) {
     
