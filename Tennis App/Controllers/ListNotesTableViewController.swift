@@ -12,7 +12,7 @@ class ListNotesTableViewController: UIViewController, UITableViewDataSource, UIT
 
     @IBOutlet var tableView: UITableView!
     
-    var user = [User]() {
+    var users = [User]() {
         didSet {
             tableView.reloadData()
         
@@ -23,7 +23,7 @@ class ListNotesTableViewController: UIViewController, UITableViewDataSource, UIT
         
         super.viewDidLoad()
         UserService.timeline{ (users) in
-            self.user = users
+            self.users = users
         }
     }
     
@@ -50,7 +50,7 @@ class ListNotesTableViewController: UIViewController, UITableViewDataSource, UIT
     // 1
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return user.count
+        return users.count
     }
     
     // 2
@@ -59,7 +59,7 @@ class ListNotesTableViewController: UIViewController, UITableViewDataSource, UIT
         let cell = tableView.dequeueReusableCell(withIdentifier: "listNotesTableViewCell", for: indexPath) as! ListNotesTableViewCell
         
         let row = indexPath.row
-        let user = self.user[row]
+        let user = self.users[row]
 
 
         // 2
@@ -79,7 +79,7 @@ class ListNotesTableViewController: UIViewController, UITableViewDataSource, UIT
                 // 1
                 let indexPath = tableView.indexPathForSelectedRow!
                 // 2
-                let user = self.user[indexPath.row]
+                let user = self.users[indexPath.row]
                 // 3
                 let displayInfoTableViewController = segue.destination as! DisplayInfoTableViewController
                 // 4
