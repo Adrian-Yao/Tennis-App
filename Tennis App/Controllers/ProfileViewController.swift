@@ -10,7 +10,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 
-class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextViewDelegate {
     
     var age: String?
     var gender: String?
@@ -23,6 +23,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     var isNewUser: Bool = false
     
+
     
     //PICKER VIEWS
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -88,6 +89,8 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         
         NotificationCenter.default.addObserver(self, selector: #selector(ProfileViewController.keyboardWillHide(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         
+        infoTextView.delegate = self
+
     }
     
     func keyboardWillShow(sender: NSNotification) {
@@ -105,7 +108,14 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
+    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+        if(text == "\n") {
+            infoTextView.resignFirstResponder()
+            return false
+        }
+        return true
+    }
     
     //OUTLET
     @IBOutlet weak var profilePicButton: UIButton!
@@ -123,7 +133,17 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     //ACTION
     
+    @IBAction func profileLink(_ sender: Any) {
+        openUrl(urlStr: "http://assets.usta.com/assets/639/15/National%20tennis%20Rating%20Program.pdf")
+    }
     
+    func openUrl(urlStr:String!) {
+        
+        if let url = NSURL(string:urlStr) {
+            UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        }
+    }
+
     
     
     
