@@ -32,7 +32,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if pickerView.tag == 0 {
-            return 83
+            return 77
         } else if pickerView.tag == 1 {
             return 13
         } else {
@@ -44,7 +44,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         if pickerView.tag == 0 {
-            return String(row + 18) //age
+            return String(row + 12) //age
         } else if pickerView.tag == 1 {
             return String(Double((row) + 2) / 2 ) //level
         } else {
@@ -75,7 +75,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         if isNewUser == false {
             let user = User.current
             nameTextField.text = user.displayName
-            agePicker.selectRow(Int((user.age!))! - 18, inComponent: 0, animated: false)
+            agePicker.selectRow(Int((user.age!))! - 12, inComponent: 0, animated: false)
             if user.gender == "Male" { genderSegmentControl.selectedSegmentIndex = 0 }
             else { genderSegmentControl.selectedSegmentIndex = 1 }
             levelPicker.selectRow(Int((2.0 * Double((user.level!))!) - 2.0), inComponent: 0, animated: false)
@@ -164,7 +164,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     @IBAction func matchButtonTapped(_ sender: Any) {
         
-        let ageValue = String(agePicker.selectedRow(inComponent: 0) + 18)
+        let ageValue = String(agePicker.selectedRow(inComponent: 0) + 12)
         //        var genderValue = Bool(genderSegmentControl.value)
         let genderValue: String? = genderSegmentControl.titleForSegment(at: genderSegmentControl.selectedSegmentIndex)!
         let levelValue = String((levelPicker.selectedRow(inComponent: 0) + 2)/2)

@@ -10,6 +10,7 @@ import UIKit
 
 class ListNotesTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var hiddenLabel: UILabel!
     @IBOutlet var tableView: UITableView!
     
     var users = [User]() {
@@ -24,6 +25,10 @@ class ListNotesTableViewController: UIViewController, UITableViewDataSource, UIT
         super.viewDidLoad()
         UserService.timeline{ (users) in
             self.users = users
+            if users.isEmpty {
+                self.hiddenLabel.isHidden = false;
+
+            }
         }
     }
     
