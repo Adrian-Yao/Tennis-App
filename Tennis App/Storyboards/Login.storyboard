@@ -317,12 +317,18 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="G1H-6X-YAr">
                                         <rect key="frame" x="0.0" y="353" width="278" height="50"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zId-EZ-GHW">
-                                                <rect key="frame" x="0.0" y="0.0" width="22" height="40"/>
-                                                <color key="tintColor" red="0.36470588240000001" green="0.3411764706" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg7-UF-02S">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="9k7-lm-7nT"/>
+                                                    <constraint firstAttribute="width" constant="40" id="m2Q-at-R56"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Home Courts, Best Times..." textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T2k-lI-0nD">
-                                                <rect key="frame" x="42" y="0.0" width="236" height="50"/>
+                                                <rect key="frame" x="60" y="0.0" width="218" height="50"/>
                                                 <color key="backgroundColor" red="0.85098039215686272" green="0.82352941176470584" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" button="YES"/>
@@ -336,14 +342,14 @@
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="mBi-H3-oD4" id="MF4-2e-6hE"/>
+                                                </connections>
                                             </textView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstItem="zId-EZ-GHW" firstAttribute="top" secondItem="G1H-6X-YAr" secondAttribute="top" constant="20" symbolic="YES" id="3ST-Bn-gK2"/>
                                             <constraint firstAttribute="trailing" secondItem="T2k-lI-0nD" secondAttribute="trailing" id="5lh-lK-VyO"/>
-                                            <constraint firstAttribute="bottom" secondItem="zId-EZ-GHW" secondAttribute="bottom" constant="10" id="Ag9-5P-uNk"/>
                                             <constraint firstAttribute="bottom" secondItem="T2k-lI-0nD" secondAttribute="bottom" id="IlO-3W-qsu"/>
-                                            <constraint firstItem="T2k-lI-0nD" firstAttribute="leading" secondItem="zId-EZ-GHW" secondAttribute="trailing" constant="20" id="Ugv-aT-N0y"/>
                                             <constraint firstItem="T2k-lI-0nD" firstAttribute="top" secondItem="G1H-6X-YAr" secondAttribute="top" id="np4-gC-o8K"/>
                                         </constraints>
                                     </stackView>

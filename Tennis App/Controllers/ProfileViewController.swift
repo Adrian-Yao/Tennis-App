@@ -117,6 +117,20 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         return true
     }
     
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if(infoTextView.text == "Home Courts Boy") {
+            infoTextView.text = ""
+        }
+        infoTextView.becomeFirstResponder()
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if(infoTextView.text == "") {
+            infoTextView.text = "Home Courts Boy"
+        }
+        infoTextView.resignFirstResponder()
+    }
+    
     //OUTLET
     @IBOutlet weak var profilePicButton: UIButton!
     @IBOutlet weak var nameTextField: UITextField!
