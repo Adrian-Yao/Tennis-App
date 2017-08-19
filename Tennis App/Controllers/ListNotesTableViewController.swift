@@ -48,7 +48,16 @@ class ListNotesTableViewController: UIViewController, UITableViewDataSource, UIT
     
     
     @IBAction func logOutButton(_ sender: Any) {
+        AuthService.presentLogOut(viewController: self)
         
+//        UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"NameOfYourStoryBoard"
+//            bundle:nil];
+//        LoginViewController *add =
+//            [storyboard instantiateViewControllerWithIdentifier:@"viewControllerIdentifier"];
+//        
+//        [self presentViewController:add
+//            animated:YES
+//            completion:nil];
     }
     
     @IBAction func backAction(_ sender: Any) {
