@@ -44,7 +44,12 @@ class ListNotesTableViewController: UIViewController, UITableViewDataSource, UIT
         }
     
 
+    //ACTIONS
     
+    
+    @IBAction func logOutButton(_ sender: Any) {
+        
+    }
     
     @IBAction func backAction(_ sender: Any) {
     

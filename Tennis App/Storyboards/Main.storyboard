@@ -118,6 +118,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="logOutButton:" destination="bmy-2V-fLN" eventType="touchUpInside" id="DcY-ZI-j4L"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>

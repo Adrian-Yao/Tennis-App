@@ -157,7 +157,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <pickerView clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6YB-Pm-Ngf">
-                                                <rect key="frame" x="50" y="0.0" width="232" height="48"/>
+                                                <rect key="frame" x="50" y="0.0" width="185" height="48"/>
                                                 <color key="backgroundColor" red="0.85098039215686272" green="0.82352941176470584" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="4KL-Sw-vTS"/>
@@ -170,21 +170,25 @@
                                                     <outlet property="delegate" destination="mBi-H3-oD4" id="dgs-25-Ct0"/>
                                                 </connections>
                                             </pickerView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scroll.png" translatesAutoresizingMaskIntoConstraints="NO" id="iYa-1w-WwR">
+                                                <rect key="frame" x="255" y="0.0" width="27" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="EYq-LS-t8y"/>
+                                                    <constraint firstAttribute="width" constant="27" id="KUG-iS-TL1"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="6YB-Pm-Ngf" secondAttribute="trailing" id="SPe-SI-6Qm"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="6JZ-op-Uuk">
                                         <rect key="frame" x="0.0" y="149" width="282" height="22"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apv-vq-CZb">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Gender" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apv-vq-CZb">
                                                 <rect key="frame" x="0.0" y="0.0" width="58.5" height="22"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0NY-Q0-62b">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0NY-Q0-62b">
                                                 <rect key="frame" x="93.5" y="0.0" width="188.5" height="23"/>
                                                 <color key="backgroundColor" red="0.85098039215686272" green="0.82352941176470584" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                                                 <segments>
@@ -220,7 +224,7 @@
                                                 </connections>
                                             </button>
                                             <pickerView clipsSubviews="YES" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1b4-2w-7cs">
-                                                <rect key="frame" x="62" y="0.0" width="220" height="48"/>
+                                                <rect key="frame" x="62" y="0.0" width="173" height="48"/>
                                                 <color key="backgroundColor" red="0.85098039215686272" green="0.82352941176470584" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="Mfe-Vn-W4o"/>
@@ -229,18 +233,25 @@
                                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
                                                 </userDefinedRuntimeAttributes>
                                             </pickerView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scroll.png" translatesAutoresizingMaskIntoConstraints="NO" id="kVQ-gz-pjn">
+                                                <rect key="frame" x="255" y="0.0" width="27" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="5PM-Rm-mAu"/>
+                                                    <constraint firstAttribute="width" constant="27" id="rG6-ue-jb7"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hja-UB-Hgo">
                                         <rect key="frame" x="0.0" y="239" width="282" height="28"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfn-dL-Sd2">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfn-dL-Sd2">
                                                 <rect key="frame" x="0.0" y="0.0" width="58.5" height="28"/>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="47w-PD-9is">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="47w-PD-9is">
                                                 <rect key="frame" x="78.5" y="0.0" width="203.5" height="28"/>
                                                 <color key="backgroundColor" red="0.85098039215686272" green="0.82352941176470584" blue="0.71372549019607845" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="textColor"/>
@@ -336,15 +347,13 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="6JZ-op-Uuk" firstAttribute="top" secondItem="lPr-fr-wo5" secondAttribute="bottom" constant="10" id="1Mc-P2-MzG"/>
                                     <constraint firstItem="SA3-rU-gK3" firstAttribute="trailing" secondItem="hja-UB-Hgo" secondAttribute="trailing" id="2iG-Mu-26Y"/>
                                     <constraint firstItem="hja-UB-Hgo" firstAttribute="top" secondItem="XXX-oZ-OmX" secondAttribute="top" constant="239" id="ANd-Rx-iqt"/>
                                     <constraint firstAttribute="trailing" secondItem="G1H-6X-YAr" secondAttribute="trailing" constant="4" id="Ecp-nM-tTY"/>
                                     <constraint firstItem="MYm-Dm-0g6" firstAttribute="trailing" secondItem="W94-Rc-laC" secondAttribute="trailing" id="GbR-aV-n22"/>
                                     <constraint firstAttribute="trailing" secondItem="6JZ-op-Uuk" secondAttribute="trailing" id="MnJ-iM-RhT"/>
                                     <constraint firstItem="hja-UB-Hgo" firstAttribute="trailing" secondItem="MYm-Dm-0g6" secondAttribute="trailing" id="WJ6-Ac-29m"/>
-                                    <constraint firstItem="lPr-fr-wo5" firstAttribute="top" secondItem="XXX-oZ-OmX" secondAttribute="top" constant="91" id="bfw-R6-6rI"/>
-                                    <constraint firstItem="lPr-fr-wo5" firstAttribute="top" secondItem="SA3-rU-gK3" secondAttribute="bottom" constant="10" id="dEM-bI-Ije"/>
+                                    <constraint firstItem="lPr-fr-wo5" firstAttribute="top" secondItem="XXX-oZ-OmX" secondAttribute="top" constant="91" id="bzR-u1-s3t"/>
                                     <constraint firstItem="G1H-6X-YAr" firstAttribute="top" secondItem="XXX-oZ-OmX" secondAttribute="top" constant="353" id="f0O-M7-nuA"/>
                                     <constraint firstAttribute="trailing" secondItem="SA3-rU-gK3" secondAttribute="trailing" id="mmO-AJ-bbk"/>
                                     <constraint firstItem="k1g-Py-aUI" firstAttribute="centerX" secondItem="XXX-oZ-OmX" secondAttribute="centerX" id="t93-U6-Orf"/>
@@ -425,4 +434,7 @@
             <point key="canvasLocation" x="1932" y="162.3688155922039"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="scroll.png" width="400" height="400"/>
+    </resources>
 </document>
