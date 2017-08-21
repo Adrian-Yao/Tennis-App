@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="0De-uB-fev">
             <objects>
-                <viewController id="4Dl-6H-mkC" customClass="LoginViewController" customModule="Tennis_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="4Dl-6H-mkC" customClass="LoginViewController" customModule="Tennis_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mau-Al-wM1"/>
                         <viewControllerLayoutGuide type="bottom" id="AKW-Zr-y3h"/>

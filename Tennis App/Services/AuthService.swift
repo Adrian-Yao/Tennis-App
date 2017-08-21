@@ -32,7 +32,10 @@ struct AuthService {
         
         let signOutAction = UIAlertAction(title: "Log Out", style: .destructive) { _ in
             logUserOut()
+            
+            
         }
+        
         
         alertController.addAction(signOutAction)
         
@@ -40,14 +43,20 @@ struct AuthService {
         alertController.addAction(cancelAction)
         
         viewController.present(alertController, animated: true)
+        
+        
     }
     //It logs out, just need to direct it to the loginViewController. How?
     static func logUserOut(){
         do {
             try Auth.auth().signOut()
+        
+            
         } catch let error as NSError {
             assertionFailure("Error signing out: \(error.localizedDescription)")
         }
+        
+    
     }
     
     private static func loginErrors(error : Error, controller : UIViewController){

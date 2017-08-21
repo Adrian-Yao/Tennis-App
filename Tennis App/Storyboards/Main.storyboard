@@ -122,6 +122,9 @@
                                     <action selector="logOutButton:" destination="bmy-2V-fLN" eventType="touchUpInside" id="DcY-ZI-j4L"/>
                                 </connections>
                             </button>
+                            <connections>
+                                <segue destination="RTH-vn-tsc" kind="show" identifier="" id="3gU-o7-1iw"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -132,6 +135,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XuV-Xy-1UT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2500" y="17"/>
+        </scene>
+        <!--LoginViewController-->
+        <scene sceneID="f0a-ug-xY6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" referencedIdentifier="LoginViewController" id="RTH-vn-tsc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fhN-xt-P1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2957" y="-212"/>
         </scene>
         <!--Display Info View Controller-->
         <scene sceneID="nvg-k1-hoJ">

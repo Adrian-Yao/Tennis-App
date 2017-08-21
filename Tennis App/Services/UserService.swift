@@ -59,6 +59,7 @@ struct UserService {
                         if user.uid != User.current.uid {
                             if User.current.country == user.country {
                                     users.append(user)
+
                             }
                         }
                     }
