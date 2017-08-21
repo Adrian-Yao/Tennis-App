@@ -90,6 +90,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         NotificationCenter.default.addObserver(self, selector: #selector(ProfileViewController.keyboardWillHide(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         
         infoTextView.delegate = self
+    
 
     }
     
@@ -108,17 +109,21 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         if(text == "\n") {
             infoTextView.resignFirstResponder()
             return false
         }
         return true
     }
+//    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+//      
+//    }
+    
     
     func textViewDidBeginEditing(_ textView: UITextView) {
-        if(infoTextView.text == "Home Courts Boy") {
+        if(infoTextView.text == "Home Courts, Best Times") {
             infoTextView.text = ""
         }
         infoTextView.becomeFirstResponder()
@@ -126,7 +131,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     func textViewDidEndEditing(_ textView: UITextView) {
         if(infoTextView.text == "") {
-            infoTextView.text = "Home Courts Boy"
+            infoTextView.text = "Home Courts, Best Times"
         }
         infoTextView.resignFirstResponder()
     }
