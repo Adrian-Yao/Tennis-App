@@ -48,7 +48,17 @@ class ListNotesTableViewController: UIViewController, UITableViewDataSource, UIT
     
     
     @IBAction func logOutButton(_ sender: Any) {
-        AuthService.presentLogOut(viewController: self)
+        AuthService.presentLogOut(viewController: self, completion: {(success) in
+        
+            let storyboard = UIStoryboard(name: "Login", bundle: .main)
+            if let initialViewController = storyboard.instantiateInitialViewController() {
+                self.view.window?.rootViewController = initialViewController
+                self.view.window?.makeKeyAndVisible()
+                
+            }
+        
+        })
+    
 //        present( UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: "LoginViewControllerID") as UIViewController, animated: true, completion: nil)
         
 //        [[self navigationController] popViewControllerAnimated:YES];
@@ -61,13 +71,7 @@ class ListNotesTableViewController: UIViewController, UITableViewDataSource, UIT
 //        [self presentViewController:add
 //            animated:YES
 //            completion:nil];
-        let storyboard = UIStoryboard(name: "Login", bundle: .main)
-        if let initialViewController = storyboard.instantiateInitialViewController() {
-            self.view.window?.rootViewController = initialViewController
-          self.view.window?.makeKeyAndVisible()
-//        }
-     
-        }
+
     }
  
     

@@ -27,11 +27,12 @@ struct AuthService {
         }
     }
     
-    static func presentLogOut(viewController : UIViewController){
+    static func presentLogOut(viewController : UIViewController, completion: @escaping (Bool) -> Void){
         let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         
         let signOutAction = UIAlertAction(title: "Log Out", style: .destructive) { _ in
             logUserOut()
+            completion(true)
             
             
         }
