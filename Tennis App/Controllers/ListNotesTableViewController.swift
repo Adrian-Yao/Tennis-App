@@ -61,14 +61,14 @@ class ListNotesTableViewController: UIViewController, UITableViewDataSource, UIT
 //        [self presentViewController:add
 //            animated:YES
 //            completion:nil];
-//        let storyboard = UIStoryboard(name: "Login", bundle: .main)
-//        if let initialViewController = storyboard.instantiateInitialViewController() {
-//            self.view.window?.rootViewController = initialViewController
-          //self.view.window?.makeKeyAndVisible()
+        let storyboard = UIStoryboard(name: "Login", bundle: .main)
+        if let initialViewController = storyboard.instantiateInitialViewController() {
+            self.view.window?.rootViewController = initialViewController
+          self.view.window?.makeKeyAndVisible()
 //        }
      
+        }
     }
-    
  
     
     @IBAction func backAction(_ sender: Any) {
