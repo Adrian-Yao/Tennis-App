@@ -69,6 +69,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         levelPicker.dataSource = self
         
         // Do any additional setup after loading the view, typically from a nib.
+        
         self.hideKeyboardWhenTappedAround()
         
         
