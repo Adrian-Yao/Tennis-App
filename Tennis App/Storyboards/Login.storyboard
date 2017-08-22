@@ -427,6 +427,7 @@
                     <connections>
                         <outlet property="agePicker" destination="6YB-Pm-Ngf" id="kWZ-3W-2G9"/>
                         <outlet property="cityTextField" destination="DGu-Qo-qw6" id="vWx-PG-M2C"/>
+                        <outlet property="countrySearchTextField" destination="47w-PD-9is" id="ANz-n6-usl"/>
                         <outlet property="countryTextField" destination="47w-PD-9is" id="cQJ-UC-JKA"/>
                         <outlet property="genderSegmentControl" destination="0NY-Q0-62b" id="qa0-g3-8Je"/>
                         <outlet property="infoTextView" destination="T2k-lI-0nD" id="XmG-cJ-MTa"/>

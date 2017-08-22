@@ -9,6 +9,7 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import SearchTextField
 
 class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextViewDelegate {
     
@@ -148,8 +149,17 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     @IBOutlet weak var phoneNumberTextField: UITextField!
     @IBOutlet weak var infoTextView: UITextView!
     @IBOutlet weak var matchButton: UIButton!
-    @IBOutlet weak var errorLabel: UILabel!
     
+    @IBOutlet weak var countrySearchTextField: SearchTextField!
+    
+    /* Autocomplete Text field for countryTextField */
+    
+    
+    
+    
+    
+    
+    //End of Autocomplete
     
     //ACTION
     

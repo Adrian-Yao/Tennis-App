@@ -48,6 +48,7 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - SearchTextField (1.1.4)
 
 DEPENDENCIES:
   - Firebase/Auth
@@ -55,6 +56,7 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
   - FirebaseUI/Auth
+  - SearchTextField
 
 SPEC CHECKSUMS:
   Firebase: 1492bf04e1b73a7353b4fb2cf5a20bac9692f341
@@ -68,7 +70,8 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 5ad62e8200fa00ed011fe5e08d27fef72c5b1429
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SearchTextField: a8fe694213036c0c9c681dae049b6cc57ebbbea1
 
-PODFILE CHECKSUM: 2e8a4f45533306b980601045e459e500bd50ce03
+PODFILE CHECKSUM: acfdb3e4e29e768a281b4ca4c24333c0e22f5fa3
 
 COCOAPODS: 1.2.1

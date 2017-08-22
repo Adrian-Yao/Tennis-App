@@ -6,10 +6,19 @@ target 'Tennis App' do
   use_frameworks!
 
   # Pods for Tennis App
-	 pod 'Firebase/Core'
+
+  pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod 'FirebaseUI/Auth'
   pod 'Firebase/Database'
   pod 'Firebase/Storage'
+  pod ‘SearchTextField’
+
 
 end
+
+
+
+
+
+
