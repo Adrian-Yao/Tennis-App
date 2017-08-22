@@ -81,7 +81,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
             if user.gender == "Male" { genderSegmentControl.selectedSegmentIndex = 0 }
             else { genderSegmentControl.selectedSegmentIndex = 1 }
             levelPicker.selectRow(Int((2.0 * Double((user.level!))!) - 2.0), inComponent: 0, animated: false)
-            countryTextField.text = user.country
+            countrySearchTextField.text = user.country
             cityTextField.text = user.city
             phoneNumberTextField.text = user.phoneNumber
             infoTextView.text = user.info
@@ -93,6 +93,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
         
         infoTextView.delegate = self
     
+        //    countrySearchTextField.filterStrings(["United States", "England", "China"])
 
     }
     
@@ -150,11 +151,14 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     @IBOutlet weak var infoTextView: UITextView!
     @IBOutlet weak var matchButton: UIButton!
     
-    @IBOutlet weak var countrySearchTextField: SearchTextField!
     
     /* Autocomplete Text field for countryTextField */
     
+  
+    @IBOutlet weak var countrySearchTextField: SearchTextField!
     
+//    countrySearchTextField.filterStrings(["United States", "England", "China"])
+
     
     
     
@@ -179,7 +183,22 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     
     @IBAction func profileButtonTapped(_ sender: Any) {
         
+        let alertController = UIAlertController(title: "Feature Coming Soon.", message: "Due to appear in next update", preferredStyle: .alert)
         
+        //                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { action in
+        //                    // ...
+        //                }
+        //                alertController.addAction(cancelAction)
+        
+        let OKAction = UIAlertAction(title: "OK", style: .default) { action in
+            // ...
+        }
+        alertController.addAction(OKAction)
+        
+        self.present(alertController, animated: true) {
+            // ...
+        }
+        return
         
         print("Profile ICE CREAM")
     }
@@ -208,7 +227,7 @@ class ProfileViewController: UIViewController, UIPickerViewDataSource, UIPickerV
             !(genderValue?.isEmpty)!,
             let level = String(levelValue),
             !(levelValue.isEmpty),
-            let country = countryTextField.text,
+            let country = countrySearchTextField.text,
             !country.isEmpty,
             let city = cityTextField.text,
             !city.isEmpty,
